@@ -50,7 +50,7 @@ Funciona igual que «Dormir ahora», pero tú eliges la hora de acostarte. Sirve
 
 ### Siesta
 
-Te propone cuatro duraciones: 10, 18, 25 y 90 minutos, y te muestra a qué hora sonaría la alarma con cada una. Las tres primeras son siestas cortas. La de 90 minutos equivale a un ciclo completo, según el promedio que usa la calculadora.
+Te propone cuatro duraciones: 10, 18, 25 y 90 minutos, y te muestra a qué hora sonaría la alarma con cada una. Suma a la hora actual el tiempo que tardas en dormirte y la duración de la siesta. Por ejemplo, si son las 3:00 p. m. y tardas unos 15 minutos en dormirte, la alarma de la siesta de 10 minutos sonaría a las 3:25 p. m. Las tres primeras son siestas cortas. La de 90 minutos equivale a un ciclo completo, según el promedio que usa la calculadora.
 
 ## Un ejemplo con horas reales
 
@@ -90,9 +90,9 @@ Los 90 minutos y los 15 minutos son valores promedio. Tu ciclo puede ser más co
 
 En la infancia el sueño se organiza de otra forma, así que la calculadora no está hecha para niñas y niños.
 
-### No está pensada para el trabajo nocturno
+### Trabajo nocturno o por turnos
 
-Si trabajas de noche o en turnos que cambian, tu descanso no sigue el patrón de una noche común, que es lo que asume la calculadora. Sus cuentas no toman eso en cuenta.
+La fórmula funciona a cualquier hora: puedes calcular, por ejemplo, a qué hora acostarte para despertar a las 3:00 p. m. Pero dormir de día tiene sus propias dificultades, y una calculadora no las resuelve. Si trabajas de noche o en turnos que cambian y el sueño te cuesta, vale la pena platicarlo con un profesional de la salud.
 
 ### No reemplaza a un profesional
 

@@ -1,0 +1,163 @@
+---
+// Un artículo de la guía: migas de pan, título, fecha, tiempo de lectura,
+// "Lo esencial", cuerpo, fuentes, autoría y enlace a la calculadora.
+import Base from '../layouts/Base.astro';
+import { sitio } from '../config/sitio';
+import { ruta, t } from '../i18n/rutas';
+import { esquemaArticulo, esquemaMigas } from '../lib/esquemas';
+import { alternativasDeArticulo, articulosPublicados, idiomaDe, urlDe, type Articulo } from '../lib/guia';
+import { rellenar } from '../lib/hora';
+import { contarPalabras, fechaLarga, minutosDeLectura } from '../lib/texto';
+
+interface Props {
+  articulo: Articulo;
+}
+const { articulo } = Astro.props;
+const idioma = idiomaDe(articulo);
+const tx = t(idioma);
+const g = tx.guia;
+const d = articulo.data;
+const url = urlDe(articulo);
+
+const palabras = contarPalabras(articulo.body ?? '');
+const minutos = minutosDeLectura(palabras);
+const html = articulo.rendered?.html ?? '';
+// "Lo esencial" va justo después del primer párrafo.
+const corte = html.indexOf('</p>');
+const primerParrafo = corte >= 0 ? html.slice(0, corte + 4) : html;
+const resto = corte >= 0 ? html.slice(corte + 4) : '';
+
+const otros = (await articulosPublicados(idioma)).filter((a) => a.id !== articulo.id).slice(0, 3);
+const alternativas = await alternativasDeArticulo(articulo);
+
+const migas = [
+  { nombre: tx.inicio, url: ruta('despertar', idioma) },
+  { nombre: tx.menu.guia, url: ruta('guia', idioma) },
+  { nombre: d.titulo, url },
+];
+
+const esquemas = [
+  esquemaArticulo({
+    titulo: d.titulo,
+    descripcion: d.descripcion,
+    url,
+    idioma,
+    publicado: d.publicado,
+    actualizado: d.actualizado,
+    fuentes: d.fuentes,
+    palabras,
+  }),
+  esquemaMigas(migas),
+];
+const calculadora = d.calculadora;
+---
+
+<Base
+  idioma={idioma}
+  titulo={`${d.titulo} | ${sitio.marca}`.length <= 70 ? `${d.titulo} | ${sitio.marca}` : d.titulo}
+  descripcion={d.descripcion}
+  alternativas={alternativas}
+  noindex={!d.revisado}
+  esquemas={esquemas}
+  ogTipo="article"
+  conLema={false}
+  publicado={d.publicado}
+  actualizado={d.actualizado}
+>
+  <article class="contenedor-texto">
+    <nav class="migas" aria-label={g.migas}>
+      <ol>
+        {
+          migas.map((m, i) =>
+            i < migas.length - 1 ? (
+              <li>
+                <a href={m.url}>{m.nombre}</a>
+              </li>
+            ) : (
+              <li aria-current="page">{m.nombre}</li>
+            ),
+          )
+        }
+      </ol>
+    </nav>
+
+    <header class="pagina-cabecera">
+      <h1>{d.titulo}</h1>
+      <p class="meta-articulo">
+        <span>
+          {rellenar(g.actualizado, { fecha: fechaLarga(d.actualizado, tx.fechas.locale) })}
+        </span>
+        <span>{rellenar(g.lectura, { n: minutos })}</span>
+        <span>{g.autoria}</span>
+      </p>
+      {!d.revisado && <p class="borrador" role="note">{g.borrador}</p>}
+    </header>
+
+    <div class="prosa">
+      <Fragment set:html={primerParrafo} />
+      {
+        d.esencial.length > 0 && (
+          <aside class="esencial" aria-labelledby="lo-esencial">
+            <h2 id="lo-esencial">{g.loEsencial}</h2>
+            <ul>
+              {d.esencial.map((punto) => (
+                <li>{punto}</li>
+              ))}
+            </ul>
+          </aside>
+        )
+      }
+      <Fragment set:html={resto} />
+    </div>
+
+    <p>
+      <a class="boton" href={ruta(calculadora, idioma)}>{g.prueba}: {tx.pestanas[calculadora]}</a>
+    </p>
+
+    {
+      d.fuentes.length > 0 && (
+        <section class="fuentes" aria-labelledby="fuentes">
+          <h2 id="fuentes">{g.fuentes}</h2>
+          <ol>
+            {d.fuentes.map((f) => (
+              <li>
+                {f.url ? (
+                  <a href={f.url} target="_blank" rel="noopener">
+                    {f.titulo}
+                  </a>
+                ) : (
+                  <>
+                    {f.titulo} <strong>{g.enlacePendiente}</strong>
+                  </>
+                )}
+              </li>
+            ))}
+          </ol>
+        </section>
+      )
+    }
+
+    <aside class="caja" aria-labelledby="autoria">
+      <h2 id="autoria">{g.autoria}</h2>
+      <p>{g.autoriaTexto}</p>
+      <p><a href={ruta('acerca', idioma)}>{g.autoriaEnlace}</a></p>
+    </aside>
+
+    {
+      otros.length > 0 && (
+        <section aria-labelledby="sigue-leyendo">
+          <h2 id="sigue-leyendo">{g.otros}</h2>
+          <ul class="lista-articulos">
+            {otros.map((a) => (
+              <li>
+                <a href={urlDe(a)}>
+                  <span class="titulo-articulo">{a.data.titulo}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )
+    }
+  </article>
+</Base>

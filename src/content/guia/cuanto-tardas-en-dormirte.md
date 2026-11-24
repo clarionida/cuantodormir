@@ -64,7 +64,7 @@ Quince minutos de diferencia en el tiempo para dormirte mueven todas las horas q
 
 ## Cómo cambiarlo
 
-En la calculadora puedes cambiar el tiempo para dormirte con una rueda que va de 1 a 120 minutos. Gírala hasta el valor que se parezca más a tus noches, y la calculadora rehace las cuentas con ese valor.
+En la calculadora puedes cambiar el tiempo para dormirte con una rueda que va de 1 a 120 minutos. Gírala hasta el valor que se parezca más a tus noches, toca «Calcular» y la calculadora rehace las cuentas con ese valor. Lo que elijas se guarda solo en tu dispositivo y se usa en las cuatro pestañas.
 
 Algunas ideas para elegir tu número:
 

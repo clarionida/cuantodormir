@@ -56,6 +56,9 @@ const columnasLatencia: ColumnaRueda[] = [
   },
 ];
 
+// Texto de ejemplo que reserva el espacio del reloj hasta que llega la hora real.
+const relojEjemplo = rellenar(tx.relojPlural, { hora: formatearHora({ h: 22, m: 45 }, idioma) });
+
 // Texto completo inicial para lectores de pantalla.
 const textoHoraInicial = formatearHora(inicial, idioma);
 const textoLatenciaInicial = rellenar(tx.latencia.valorTexto, { x: cfg.latenciaPorDefecto });
@@ -134,14 +137,23 @@ const esquemas = [
       {
         pestana === 'ahora' ? (
           <p>
-            <span class="reloj" data-reloj hidden />
+            <span class="reloj reloj--pendiente" data-reloj>
+              {relojEjemplo}
+            </span>{' '}
             {c.subtitulo}
           </p>
         ) : (
           <p>{c.subtitulo}</p>
         )
       }
-      {pestana === 'siesta' && <p class="reloj" data-reloj hidden />}
+      {
+        pestana === 'siesta' && (
+          <p class="reloj reloj--pendiente" data-reloj>
+            {relojEjemplo}
+          </p>
+        )
+      }
+      <noscript><style is:inline>[data-reloj]{display:none}</style></noscript>
     </div>
 
     <form data-formulario novalidate>
@@ -216,8 +228,11 @@ const esquemas = [
       </details>
 
       <button type="submit" class="boton boton--ancho">{tx.calcular}</button>
-      <noscript><p class="suave" style="margin-top:1rem">{tx.sinJs}</p></noscript>
     </form>
+    <noscript>
+      <style is:inline>[data-formulario]{display:none}</style>
+      <p class="caja">{tx.sinJs}</p>
+    </noscript>
 
     <section class="resultados" data-resultados hidden aria-labelledby={`titulo-resultados-${pestana}`}>
       <h2 id={`titulo-resultados-${pestana}`} tabindex="-1" data-titulo-resultados>{c.resultados}</h2>

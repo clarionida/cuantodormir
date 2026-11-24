@@ -1,0 +1,53 @@
+# Perguntas frequentes em português do Brasil.
+# Cada pergunta tem "pregunta" e "respuesta". Na resposta você pode usar
+# links assim: [texto](https://…) e separar parágrafos com uma linha em branco.
+preguntas:
+  - pregunta: "Por que a calculadora usa ciclos de 90 minutos?"
+    respuesta: |
+      Porque é a média mais citada para um ciclo de sono em pessoas adultas. É uma aproximação: em um estudo com 6.064 ciclos registrados em laboratório, a mediana foi de 96 minutos, o primeiro ciclo da noite foi mais curto e houve muita variação entre as pessoas ([Sleep Health, 2024](https://pubmed.ncbi.nlm.nih.gov/37914631/)).
+
+      Se você costuma acordar com a cabeça pesada mesmo calculando bem, experimente um ciclo um pouco mais longo em "Ajustar meu ciclo" (de 80 a 110 minutos).
+
+  - pregunta: "E se eu acordar no meio de um ciclo?"
+    respuesta: |
+      Talvez você sinta a mente enevoada por alguns minutos. Esse estado se chama inércia do sono: uma queda temporária do estado de alerta e do desempenho logo depois de acordar, que costuma ser mais intensa quando você acorda do sono profundo ou depois de dormir pouco ([Hilditch e McHill, 2019](https://pubmed.ncbi.nlm.nih.gov/31692489/)). Com o tempo, ela passa. A calculadora procura fazer você acordar no fim de um ciclo para que isso seja menos provável, mas não tem como garantir.
+
+  - pregunta: "É melhor dormir 6 horas do que 7 se assim eu acordar no fim de um ciclo?"
+    respuesta: |
+      Não. Acordar no fim de um ciclo pode ajudar você a se sentir mais leve ao levantar, mas não substitui as horas de sono. As diretrizes recomendam que pessoas adultas durmam 7 horas ou mais por noite de forma regular ([Watson e colaboradores, 2015](https://pubmed.ncbi.nlm.nih.gov/25979105/)). Por isso marcamos como "Recomendado" as opções de 5 e 6 ciclos (de 7 h 30 min a 9 h).
+
+  - pregunta: "Quantas horas eu deveria dormir?"
+    respuesta: |
+      Para pessoas adultas, 7 horas ou mais por noite de forma regular ([Watson e colaboradores, 2015](https://pubmed.ncbi.nlm.nih.gov/25979105/)). A National Sleep Foundation propõe de 7 a 9 horas entre os 18 e os 64 anos, e de 7 a 8 horas a partir dos 65 ([Hirshkowitz e colaboradores, 2015](https://pubmed.ncbi.nlm.nih.gov/29073412/)). Cada pessoa é diferente; no guia você encontra [a tabela completa por idade](/guia/cuantas-horas-dormir-segun-edad/) (em espanhol).
+
+  - pregunta: "Por que vocês somam 15 minutos para eu pegar no sono?"
+    respuesta: |
+      Porque quase ninguém dorme assim que fecha os olhos. Por padrão somamos 15 minutos, e você pode mudar esse valor de 1 a 120 minutos no seletor "Quanto tempo você leva para pegar no sono?". Sua escolha fica salva no seu dispositivo e é usada nas quatro abas. Se você costuma demorar para pegar no sono, leia [quanto tempo você leva para pegar no sono](/guia/cuanto-tardas-en-dormirte/) (em espanhol).
+
+  - pregunta: "Funciona se eu trabalho à noite ou em turnos?"
+    respuesta: |
+      A fórmula funciona em qualquer horário: você pode calcular a que horas deitar para acordar às 15:00, por exemplo. Mas dormir de dia tem suas próprias dificuldades, e uma calculadora não resolve isso. Se você trabalha em turnos e o sono anda difícil, vale a pena conversar com um profissional de saúde.
+
+  - pregunta: "Serve para crianças?"
+    respuesta: |
+      Foi pensada para pessoas adultas. Na infância, os ciclos de sono são mais curtos e a estrutura do sono é diferente (Ohayon e colaboradores, 2004 [LINK PENDENTE]), e as crianças também precisam de mais horas de sono conforme a idade ([Hirshkowitz e colaboradores, 2015](https://pubmed.ncbi.nlm.nih.gov/29073412/)). Para elas, o melhor é seguir as orientações do pediatra.
+
+  - pregunta: "Quanto tempo deve durar uma soneca?"
+    respuesta: |
+      Depende do que você procura. Em um estudo com pessoas jovens que tinham dormido pouco, a soneca de 10 minutos trouxe as melhoras mais imediatas; as de 20 e 30 minutos também ajudaram, mas depois de um tempo de atordoamento ([Brooks e Lack, 2006](https://pubmed.ncbi.nlm.nih.gov/16796222/)). Na [calculadora de soneca](/pt/soneca/) oferecemos opções de 10, 18 e 25 minutos, e um ciclo completo de 90.
+
+  - pregunta: "Por que às vezes acordo com cansaço mesmo calculando bem?"
+    respuesta: |
+      Pode haver vários motivos. Seu ciclo pode durar mais ou menos de 90 minutos, e muda de uma noite para outra ([Sleep Health, 2024](https://pubmed.ncbi.nlm.nih.gov/37914631/)). Talvez você tenha levado mais tempo para pegar no sono do que calculou, ou venha dormindo pouco há várias noites. Experimente ajustar seu ciclo ou seu tempo para pegar no sono. E se o cansaço for frequente, converse com um profissional de saúde.
+
+  - pregunta: "A calculadora substitui um médico?"
+    respuesta: |
+      Não. O cuánto dormir é um guia gentil, não um conselho médico. Se dormir costuma ser difícil para você, se você sente muito sono durante o dia ou se alguém percebe que você ronca muito alto ou faz pausas na respiração, vale a pena conversar com um profissional de saúde. Contamos mais em [quando buscar ajuda profissional](/guia/cuando-buscar-ayuda-profesional/) (em espanhol).
+
+  - pregunta: "Vocês guardam meus dados ou minha localização?"
+    respuesta: |
+      Não. Usamos a hora do seu dispositivo e nunca pedimos sua localização. O que você escolhe (por exemplo, quanto tempo leva para pegar no sono) fica salvo só no seu navegador. Não usamos cookies, rastreadores nem anúncios. Explicamos tudo em [privacidade](/pt/privacidade/).
+
+  - pregunta: "Funciona sem internet?"
+    respuesta: |
+      Sim. Depois da sua primeira visita, a calculadora continua funcionando mesmo sem conexão. Você também pode adicioná-la à tela inicial do seu celular para tê-la sempre a um toque.

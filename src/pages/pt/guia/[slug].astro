@@ -1,0 +1,12 @@
+---
+import ArticuloGuia from '../../../components/ArticuloGuia.astro';
+import { articulosPublicados, slugDe } from '../../../lib/guia';
+
+export async function getStaticPaths() {
+  const articulos = await articulosPublicados('pt');
+  return articulos.map((articulo) => ({ params: { slug: slugDe(articulo) }, props: { articulo } }));
+}
+const { articulo } = Astro.props;
+---
+
+<ArticuloGuia articulo={articulo} />

@@ -1,10 +1,10 @@
 /* ──────────────────────────────────────────────────────────────────────────
    cuánto dormir · papelería japonesa de noche
-   Colores (todos los textos cumplen contraste AA 4.5:1 o más):
-   texto #E7E2D6 / fondo #0E1530 → 14.1:1 · sobre superficie → 12.6:1
-   texto-suave #A9AEC4 / fondo → 8.2:1 · sobre superficie → 7.4:1
-   acento #E2C27D / fondo → 10.5:1 · fondo sobre acento (botón) → 10.5:1
-   acento-2 #A89BD8 / fondo → 7.1:1
+   Contraste de cada combinación (mínimo AA: 4.5:1), sobre fondo · sobre superficie:
+   texto #E7E2D6 → 13.90 · 12.60
+   texto-suave #A9AEC4 → 8.16 · 7.40
+   acento #E2C27D → 10.48 · 9.50 (y fondo sobre botón acento → 10.48)
+   acento-2 #A89BD8 → 7.14 · 6.47
    ────────────────────────────────────────────────────────────────────────── */
 :root {
   --fondo: #0e1530;
@@ -220,20 +220,34 @@ main {
   padding-bottom: 3rem;
 }
 
-/* ── Avisos superiores (sugerencia de idioma y sin conexión) ───────────── */
+/* ── Avisos (sugerencia de idioma y sin conexión) ───────────────────────
+   Van fijos abajo de la pantalla: aparecer no mueve el resto de la página. */
+.avisos {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 30;
+  display: grid;
+  gap: 1px;
+  padding-bottom: env(safe-area-inset-bottom);
+  pointer-events: none;
+}
 .aviso-barra {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem 0.75rem;
+  gap: 0.25rem 0.75rem;
   flex-wrap: wrap;
   padding: 0.25rem 3rem 0.25rem 1rem;
-  min-height: 44px;
+  min-height: 48px;
   position: relative;
   font-size: 0.875rem;
   background: var(--superficie);
-  border-bottom: 1px solid var(--linea);
+  border-top: 1px solid var(--linea);
   text-align: center;
+  pointer-events: auto;
+  box-shadow: 0 -8px 24px rgb(5 8 20 / 0.35);
 }
 .aviso-barra a {
   display: inline-flex;
@@ -384,6 +398,11 @@ main {
 .reloj {
   font-variant-numeric: tabular-nums;
   color: var(--texto) !important;
+}
+/* Mientras llega la hora real, el reloj ocupa su lugar sin verse
+   (así el texto no salta). */
+.reloj--pendiente {
+  visibility: hidden;
 }
 
 .campo {
@@ -874,12 +893,10 @@ table {
   font-size: 0.9rem;
   font-variant-numeric: tabular-nums;
 }
-caption {
-  padding: 0.75rem 1rem 0.25rem;
-  text-align: left;
+.tabla-titulo {
+  margin: 0 0 -0.25rem;
   font-family: var(--serif);
-  font-size: 1.05rem;
-  color: var(--texto);
+  font-size: 1.1rem;
 }
 th,
 td {
@@ -889,6 +906,7 @@ td {
   vertical-align: top;
 }
 thead th {
+  border-top: 0;
   font-weight: 500;
   font-size: 0.75rem;
   letter-spacing: 0.08em;
@@ -1036,40 +1054,16 @@ td {
   color: var(--texto-suave);
 }
 
-.preguntas details {
+.pregunta {
+  padding-top: 0.25rem;
   border-top: 1px solid var(--linea);
 }
-.preguntas details:last-of-type {
-  border-bottom: 1px solid var(--linea);
-}
-.preguntas summary {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  min-height: 56px;
-  padding: 0.75rem 0;
-  cursor: pointer;
-  font-family: var(--serif);
-  font-size: 1.15rem;
-  line-height: 1.35;
-  list-style: none;
-}
-.preguntas summary::-webkit-details-marker {
-  display: none;
-}
-.preguntas summary::after {
-  content: '+';
-  flex: none;
-  color: var(--acento);
-  font-family: var(--sans);
+.pregunta h2 {
+  margin-top: 1.25rem;
   font-size: 1.3rem;
 }
-.preguntas details[open] summary::after {
-  content: '–';
-}
-.preguntas .respuesta {
-  padding-bottom: 0.75rem;
+.enlaces-finales {
+  margin-top: 2rem;
 }
 
 /* ── Videos (solo cargan al tocarlos) ──────────────────────────────────── */
@@ -1234,4 +1228,9 @@ td {
   margin-top: 2.5rem;
   font-size: 0.9rem;
   color: var(--texto-suave);
+}
+
+/* Deja espacio al final para que la franja de avisos no tape el pie. */
+body:has(.avisos .aviso-barra:not([hidden])) {
+  padding-bottom: 4.5rem;
 }

@@ -319,7 +319,7 @@ function iniciar(raiz: HTMLElement, datos: Datos): void {
   function actualizarReloj() {
     if (!reloj) return;
     reloj.textContent = frase(t.relojPlural, t.relojSingular, new Date());
-    reloj.hidden = false;
+    reloj.classList.remove('reloj--pendiente');
   }
   function programarReloj() {
     actualizarReloj();

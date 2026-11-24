@@ -66,7 +66,7 @@ La calculadora no mide tu cronotipo. Pero sí te ayuda a elegir horarios que te 
 2. La calculadora te propone horas para acostarte, sumando 15 minutos para dormirte y contando ciclos de 90 minutos (o la duración que hayas ajustado).
 3. Elige la opción de 5 o 6 ciclos, es decir, de 7 h 30 min a 9 h.
 
-Si eres más búho, quizá prefieras la opción de 5 ciclos y acostarte un poco más tarde. Si eres más alondra, quizá te acomode la de 6 ciclos y acostarte más temprano. Lo importante es que el horario que elijas te deje dormir lo suficiente.
+No hay una opción mejor para cada cronotipo. Lo importante es que el horario que elijas te deje dormir lo suficiente y te resulte cómodo de sostener.
 
 Para las personas adultas, la recomendación es dormir 7 horas o más por noche de forma regular ([Watson y otros, 2015](https://pubmed.ncbi.nlm.nih.gov/25979105/)). Esa es una buena brújula, seas búho, alondra o algo intermedio.
 

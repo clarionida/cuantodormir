@@ -1,0 +1,51 @@
+---
+// Preguntas frecuentes. Contenido en src/content/preguntas/<idioma>.yaml
+import { getEntry } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { alternativasDe, ruta, t } from '../i18n/rutas';
+import type { Idioma } from '../lib/hora';
+import { esquemaPreguntas } from '../lib/esquemas';
+import { markdownMinimo, textoPlano } from '../lib/texto';
+
+interface Props {
+  idioma: Idioma;
+}
+const { idioma } = Astro.props;
+const tx = t(idioma);
+const m = tx.paginasMeta.preguntas;
+const entrada = await getEntry('preguntas', idioma);
+if (!entrada) throw new Error(`Falta src/content/preguntas/${idioma}.yaml`);
+const preguntas = entrada.data.preguntas.map((p) => ({
+  pregunta: p.pregunta,
+  html: markdownMinimo(p.respuesta),
+  respuestaTexto: textoPlano(p.respuesta),
+}));
+---
+
+<Base
+  idioma={idioma}
+  titulo={m.metaTitulo}
+  descripcion={m.metaDescripcion}
+  alternativas={alternativasDe('preguntas')}
+  esquemas={[esquemaPreguntas(preguntas, idioma)]}
+  conLema={false}
+>
+  <article class="contenedor-texto">
+    <header class="pagina-cabecera">
+      <h1>{m.titulo}</h1>
+    </header>
+    <div class="preguntas prosa">
+      {
+        preguntas.map((p) => (
+          <section class="pregunta">
+            <h2>{p.pregunta}</h2>
+            <div set:html={p.html} />
+          </section>
+        ))
+      }
+    </div>
+    <p class="enlaces-finales">
+      <a href={ruta('metodo', idioma)}>{tx.menu.metodo}</a> · <a href={ruta('guia', idioma)}>{tx.menu.guia}</a>
+    </p>
+  </article>
+</Base>

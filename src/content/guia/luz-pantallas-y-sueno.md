@@ -55,7 +55,7 @@ Por eso preferimos no prometerte que un filtro o unos lentes especiales van a ca
 Lo que sigue son sugerencias, no hechos probados. Tómalas como pequeñas pruebas que puedes hacer y quedarte con lo que te funcione.
 
 - **Bajar el brillo.** En la noche, una pantalla más tenue puede sentirse más amable para los ojos.
-- **Usar el modo nocturno.** Este sitio tiene un modo nocturno con colores oscuros, pensado justo para consultarlo de noche desde el celular.
+- **Elegir pantallas oscuras y suaves.** Este sitio usa colores oscuros y tenues, pensados justo para consultarlo de noche desde el celular.
 - **Dejar el celular un rato antes de dormir.** No tiene que ser mucho tiempo. Puedes empezar con unos minutos y ver cómo te sientes.
 - **Dejar el celular lejos de la cama.** Así es menos tentador tomarlo "solo para ver algo".
 - **Cambiar el contenido.** Si vas a usar el celular, quizá ayude elegir algo tranquilo en lugar de algo que te active.

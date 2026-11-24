@@ -1,0 +1,33 @@
+---
+// Página de error. GitHub Pages solo usa un archivo 404.html para todo el
+// sitio, así que esta página habla en los tres idiomas.
+import Base from '../layouts/Base.astro';
+import Simbolo from '../components/Simbolo.astro';
+import { alternativasDe, ruta, t } from '../i18n/rutas';
+
+const es = t('es').error404;
+const en = t('en').error404;
+const pt = t('pt').error404;
+---
+
+<Base
+  idioma="es"
+  titulo={es.metaTitulo}
+  descripcion={es.texto}
+  alternativas={alternativasDe('despertar')}
+  noindex
+  conCanonica={false}
+  conLema={false}
+>
+  <div class="contenedor no-encontrada">
+    <Simbolo />
+    <h1>{es.titulo}</h1>
+    <p class="suave">{es.texto}</p>
+    <p><a class="boton" href={ruta('despertar', 'es')}>{es.volver}</a></p>
+
+    <div class="otros-idiomas">
+      <p lang="en">{en.titulo} <a href={ruta('despertar', 'en')}>{en.volver}</a></p>
+      <p lang="pt-BR">{pt.titulo} <a href={ruta('despertar', 'pt')}>{pt.volver}</a></p>
+    </div>
+  </div>
+</Base>

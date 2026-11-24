@@ -24,6 +24,8 @@ interface Props {
   ogTipo?: 'website' | 'article';
   /** Muestra el lema bajo el logo. */
   conLema?: boolean;
+  /** false en la página 404 (no tiene URL canónica propia). */
+  conCanonica?: boolean;
   /** Fechas para artículos (Open Graph). */
   publicado?: Date;
   actualizado?: Date;
@@ -38,6 +40,7 @@ const {
   esquemas = [],
   ogTipo = 'website',
   conLema = true,
+  conCanonica = true,
   publicado,
   actualizado,
 } = Astro.props;
@@ -46,7 +49,8 @@ const tx = t(idioma);
 const dominio = sitio.dominio;
 const rutaActual = Astro.url.pathname.endsWith('/') ? Astro.url.pathname : `${Astro.url.pathname}/`;
 const canonica = new URL(alternativas[idioma] ?? rutaActual, dominio).href;
-const hreflangs = IDIOMAS.filter((i) => alternativas[i]).map((i) => ({
+// Las páginas sin indexar (borradores, 404) no anuncian versiones en otros idiomas.
+const hreflangs = (noindex ? [] : IDIOMAS.filter((i) => alternativas[i])).map((i) => ({
   hreflang: t(i).hreflang,
   href: new URL(alternativas[i]!, dominio).href,
 }));
@@ -77,7 +81,7 @@ const { analitica, verificacion } = sitio;
     <style is:inline>html,body{background:#0E1530;color:#E7E2D6}</style>
     <title>{titulo}</title>
     <meta name="description" content={descripcion} />
-    <link rel="canonical" href={canonica} />
+    {conCanonica && <link rel="canonical" href={canonica} />}
     {noindex && <meta name="robots" content="noindex, follow" />}
     {hreflangs.map((h) => <link rel="alternate" hreflang={h.hreflang} href={h.href} />)}
     {hreflangs.length > 0 && xDefault && <link rel="alternate" hreflang="x-default" href={xDefault} />}
@@ -96,7 +100,7 @@ const { analitica, verificacion } = sitio;
     <meta property="og:type" content={ogTipo} />
     <meta property="og:title" content={titulo} />
     <meta property="og:description" content={descripcion} />
-    <meta property="og:url" content={canonica} />
+    {conCanonica && <meta property="og:url" content={canonica} />}
     <meta property="og:locale" content={tx.ogLocale} />
     {IDIOMAS.filter((i) => i !== idioma && alternativas[i]).map((i) => <meta property="og:locale:alternate" content={t(i).ogLocale} />)}
     <meta property="og:image" content={ogImagen} />
@@ -139,13 +143,6 @@ const { analitica, verificacion } = sitio;
   <body data-idioma={idioma}>
     <a class="saltar" href="#contenido">{tx.saltar}</a>
 
-    <div class="aviso-barra" data-sugerencia hidden>
-      <span data-sugerencia-texto></span>
-      <a data-sugerencia-enlace href="/"></a>
-      <button type="button" class="cerrar" data-sugerencia-cerrar aria-label="×">×</button>
-    </div>
-    <div class="aviso-barra" data-sin-conexion role="status" hidden>{tx.sinConexion}</div>
-
     <Encabezado idioma={idioma} alternativas={alternativas} conLema={conLema} />
 
     <main id="contenido" tabindex="-1">
@@ -153,6 +150,15 @@ const { analitica, verificacion } = sitio;
     </main>
 
     <Pie idioma={idioma} />
+
+    <div class="avisos">
+      <div class="aviso-barra" data-sin-conexion role="status" hidden>{tx.sinConexion}</div>
+      <div class="aviso-barra" data-sugerencia hidden>
+        <span data-sugerencia-texto></span>
+        <a data-sugerencia-enlace href="/"></a>
+        <button type="button" class="cerrar" data-sugerencia-cerrar aria-label="×">×</button>
+      </div>
+    </div>
 
     <script>
       import '../scripts/app';

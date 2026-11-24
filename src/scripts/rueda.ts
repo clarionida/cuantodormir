@@ -20,6 +20,7 @@ export class Columna {
 
   private cuadro = 0;
   private acumulado = 0;
+  private ultimoGiro = 0;
   private arrastre: { y: number; top: number; id: number; movido: boolean } | null = null;
   private programado = false;
 
@@ -118,13 +119,17 @@ export class Columna {
   private alGirar(e: WheelEvent): void {
     if (e.ctrlKey) return; // zoom con el trackpad
     e.preventDefault();
+    // Un paso de la rueda del ratón = un valor. En el trackpad, los
+    // movimientos pequeños se acumulan hasta sumar un paso.
     const delta = e.deltaMode === 1 ? e.deltaY * 16 : e.deltaY;
+    const ahora = performance.now();
+    if (ahora - this.ultimoGiro > 250) this.acumulado = 0;
+    this.ultimoGiro = ahora;
     this.acumulado += delta;
-    const umbral = 40;
-    if (Math.abs(this.acumulado) < umbral) return;
-    const pasos = Math.trunc(this.acumulado / umbral);
-    this.acumulado -= pasos * umbral;
-    this.irA(this.indice + Math.max(-3, Math.min(3, pasos)), true);
+    if (Math.abs(this.acumulado) < 30) return;
+    const direccion = Math.sign(this.acumulado);
+    this.acumulado = 0;
+    this.irA(this.indice + direccion, true);
   }
 
   private alTocar(e: MouseEvent): void {

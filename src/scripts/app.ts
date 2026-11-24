@@ -78,10 +78,16 @@ if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.
       .register('/sw.js')
       .then(() => navigator.serviceWorker.ready)
       .then((registro) => {
-        // Guarda también las otras calculadoras de este idioma.
-        const urls = Array.from(document.querySelectorAll<HTMLAnchorElement>('[data-pestana]')).map(
+        // Guarda esta página, sus recursos (que se cargaron antes de que el
+        // service worker existiera) y las otras calculadoras de este idioma.
+        const recursos = performance
+          .getEntriesByType('resource')
+          .map((r) => r.name)
+          .filter((u) => u.startsWith(location.origin) && !u.includes('/sw.js'));
+        const pestanas = Array.from(document.querySelectorAll<HTMLAnchorElement>('[data-pestana]')).map(
           (a) => a.pathname,
         );
+        const urls = [...new Set([location.pathname, ...pestanas, ...recursos])];
         registro.active?.postMessage({ tipo: 'precargar', urls });
       })
       .catch(() => undefined);

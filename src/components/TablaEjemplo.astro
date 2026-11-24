@@ -65,9 +65,10 @@ if (pestana === 'despertar') {
 ---
 
 <h2>{tx.titulo}</h2>
+<p class="tabla-titulo" aria-hidden="true">{caption}</p>
 <div class="tabla-envoltura">
   <table>
-    <caption>{caption}</caption>
+    <caption class="sr-only">{caption}</caption>
     <thead>
       <tr>
         <th scope="col">{columnaFila}</th>
