@@ -4,7 +4,7 @@ descripcion: "Lo habitual es tardar unos minutos en dormirte. Te contamos por qu
 publicado: 2026-11-24
 actualizado: 2026-11-24
 autora: "Clariónida"
-revisado: false
+revisado: true
 orden: 6
 calculadora: "ahora"
 esencial:
