@@ -1,0 +1,26 @@
+---
+// Las cuatro pestañas: enlaces reales entre páginas (funcionan sin JavaScript).
+import { CALCULADORAS, ruta, t, type Calculadora } from '../i18n/rutas';
+import type { Idioma } from '../lib/hora';
+
+interface Props {
+  idioma: Idioma;
+  activa: Calculadora;
+}
+const { idioma, activa } = Astro.props;
+const tx = t(idioma);
+---
+
+<nav class="pestanas contenedor" aria-label={tx.navCalculadoras}>
+  <ul>
+    {
+      CALCULADORAS.map((c) => (
+        <li>
+          <a href={ruta(c, idioma)} data-pestana={c} aria-current={c === activa ? 'page' : undefined}>
+            {tx.pestanas[c]}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</nav>

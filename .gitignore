@@ -1,0 +1,16 @@
+# Dependencias y compilación
+node_modules/
+dist/
+.astro/
+
+# Archivos de marca generados en cada compilación (scripts/generar-marca.mjs)
+public/favicon.ico
+public/apple-touch-icon.png
+public/icon-192.png
+public/icon-512.png
+public/icon-maskable-512.png
+public/og-image.png
+
+# Sistema
+.DS_Store
+*.log

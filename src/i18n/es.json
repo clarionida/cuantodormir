@@ -1,0 +1,232 @@
+{
+  "idioma": "es",
+  "htmlLang": "es",
+  "hreflang": "es",
+  "ogLocale": "es_LA",
+  "nombre": "Español",
+  "corto": "ES",
+
+  "lema": "Calcula tus horas para dormir y despertar con más ligereza.",
+  "saltar": "Saltar al contenido",
+  "inicio": "Inicio",
+  "navCalculadoras": "Calculadoras",
+  "navIdioma": "Idioma",
+  "irAlInicio": "cuánto dormir, ir al inicio",
+
+  "pestanas": {
+    "despertar": "Despertar a las…",
+    "ahora": "Dormir ahora",
+    "acostarse": "Dormir a las…",
+    "siesta": "Siesta"
+  },
+
+  "calculadoras": {
+    "despertar": {
+      "metaTitulo": "cuánto dormir: calculadora de ciclos de sueño",
+      "metaDescripcion": "Calcula a qué hora acostarte para despertar al final de un ciclo de sueño de unos 90 minutos. Gratis, sin anuncios y pensada para la noche.",
+      "titulo": "¿A qué hora quieres despertar?",
+      "subtitulo": "Te sugerimos a qué hora acostarte y cerrar los ojos para despertar al final de un ciclo.",
+      "etiquetaHora": "Hora de despertar",
+      "resultados": "Buenas horas para acostarte",
+      "nombreApp": "Calculadora de ciclos de sueño: a qué hora acostarte"
+    },
+    "ahora": {
+      "metaTitulo": "Si me duermo ahora, ¿a qué hora despierto? | cuánto dormir",
+      "metaDescripcion": "Si te duermes ahora, te decimos a qué horas poner la alarma para despertar al final de un ciclo de sueño. Ya sumamos lo que tardas en dormirte.",
+      "titulo": "¿Te vas a dormir ya?",
+      "subtitulo": "Calcularemos desde este momento.",
+      "resultados": "Buenas horas para despertar",
+      "nombreApp": "Calculadora: si me duermo ahora, a qué hora despertar"
+    },
+    "acostarse": {
+      "metaTitulo": "¿A qué hora despertar si me acuesto a cierta hora?",
+      "metaDescripcion": "Elige a qué hora te acostarás y calcula las mejores horas para despertar entre ciclos de sueño de unos 90 minutos. Gratis y sin anuncios.",
+      "titulo": "¿A qué hora piensas acostarte?",
+      "subtitulo": "Elige la hora en que te meterás a la cama y cerrarás los ojos.",
+      "etiquetaHora": "Hora de acostarte",
+      "resultados": "Buenas horas para despertar",
+      "nombreApp": "Calculadora: a qué hora despertar según la hora de acostarte"
+    },
+    "siesta": {
+      "metaTitulo": "Calculadora de siesta: a qué hora despertar | cuánto dormir",
+      "metaDescripcion": "Calcula a qué hora terminar tu siesta de 10, 18, 25 o 90 minutos, con lo que tardas en dormirte ya sumado. Sin anuncios ni registro.",
+      "titulo": "Una siesta a tu medida",
+      "subtitulo": "Si te recuestas ahora, te decimos a qué hora poner la alarma.",
+      "resultados": "Buenas horas para terminar tu siesta",
+      "nombreApp": "Calculadora de siesta"
+    }
+  },
+
+  "rueda": {
+    "hora": "Hora",
+    "minutos": "Minutos",
+    "periodo": "a. m. o p. m."
+  },
+
+  "latencia": {
+    "etiqueta": "¿Cuánto tardas en dormirte?",
+    "columna": "Minutos para dormirte",
+    "unidad": "min",
+    "valorTexto": "{x} minutos",
+    "nota": "En promedio, unos 15 minutos.",
+    "info": "La mayoría de las personas tarda entre 10 y 20 minutos en dormirse. Menos de 5 minutos puede ser señal de mucho cansancio, y más de 30 minutos de forma habitual puede indicar dificultad para conciliar el sueño.",
+    "infoBoton": "Más información sobre cuánto se tarda en dormirse",
+    "cerrar": "Cerrar"
+  },
+
+  "ajuste": {
+    "enlace": "Ajustar mi ciclo",
+    "explica": "Si sueles despertar con pesadez aunque calcules bien, prueba con un ciclo un poco más largo.",
+    "etiqueta": "Duración de tu ciclo",
+    "restablecer": "Volver a 90 min"
+  },
+
+  "calcular": "Calcular",
+  "relojPlural": "Ahora son las {hora}.",
+  "relojSingular": "Ahora es la {hora}.",
+  "calculadoPlural": "Calculado a las {hora}.",
+  "calculadoSingular": "Calculado a la {hora}.",
+  "sinJs": "La calculadora necesita JavaScript para funcionar. Mientras tanto, más abajo tienes una tabla con horas ya calculadas.",
+
+  "resultados": {
+    "ciclos": "{n} ciclos · {duracion} de sueño",
+    "ciclo": "1 ciclo · {duracion} de sueño",
+    "siesta": "{duracion} de sueño",
+    "recomendado": "Recomendado",
+    "yaPaso": "Ya pasó",
+    "notaLatencia": "Ya sumamos los {x} min que tardas en dormirte.",
+    "explicaRecomendado": "Sugerimos 5 o 6 ciclos (de 7 h 30 min a 9 h), en línea con las 7 horas o más que recomiendan las guías para personas adultas.",
+    "fuenteRecomendado": "Fuente: Watson y otros, 2015",
+    "siestas": {
+      "10": "Siesta relámpago: suele despejarte enseguida.",
+      "18": "Siesta corta: un respiro para el resto de la tarde.",
+      "25": "Siesta larga: puede que necesites unos minutos para espabilar.",
+      "90": "Un ciclo completo: ideal si te faltó sueño anoche."
+    },
+    "despedidas": [
+      "Que descanses bonito.",
+      "Dulces sueños.",
+      "Que la noche te trate con suavidad.",
+      "Mañana será otro día; por ahora, a descansar."
+    ],
+    "cambiar": "Cambiar mis datos",
+    "nueva": "Nueva consulta",
+    "compartir": "Compartir",
+    "copiado": "Enlace copiado.",
+    "compartirTitulo": "Mis horas para dormir · cuánto dormir",
+    "recalcular": "Recalcular con la hora de ahora",
+    "acompanarte": "Para acompañarte",
+    "acompanarteIntro": "Si te ayuda a soltar el día, aquí tienes una práctica guiada de la misma duración.",
+    "paraSiesta": "Para la siesta de {x} min"
+  },
+
+  "ejemplos": {
+    "titulo": "Ejemplo ya calculado",
+    "notaLatencia": "Con 15 minutos para dormirte y ciclos de 90 minutos.",
+    "despertarCaption": "Horas para acostarte según la hora de despertar",
+    "despertarColumna": "Si despiertas a las",
+    "inicioCaption": "Horas para despertar según la hora en que te acuestas",
+    "inicioColumna": "Si te acuestas a las",
+    "siestaCaption": "Horas para terminar la siesta según la hora en que te recuestas",
+    "siestaColumna": "Si te recuestas a las",
+    "ciclosColumna": "{n} ciclos ({duracion})",
+    "siestaMinColumna": "{x} min"
+  },
+
+  "pie": {
+    "aviso": "Una guía amable, no un consejo médico. Si dormir te cuesta seguido, vale la pena platicarlo con un profesional de la salud.",
+    "credito": "Hecho con cariño por Clariónida",
+    "redes": "Redes de Clariónida",
+    "enlaces": "Más de cuánto dormir",
+    "nuevaPestana": "(se abre en una pestaña nueva)",
+    "instalar": "Añádela a tu pantalla de inicio",
+    "instalarIphone": "En iPhone: abre el sitio en Safari, toca el botón Compartir y luego «Agregar a inicio».",
+    "instalarAndroid": "En Android: abre el sitio en Chrome, toca el menú ⋮ y luego «Agregar a la pantalla principal» o «Instalar app».",
+    "instalarNota": "Así la tienes a un toque, y funciona aunque no tengas internet."
+  },
+
+  "donacion": {
+    "texto": "¿Te ayudó a descansar? Este rincón es gratuito y sin anuncios. Si te nace, puedes invitarme un té.",
+    "boton": "Invitar un té"
+  },
+
+  "menu": {
+    "guia": "Guía",
+    "preguntas": "Preguntas frecuentes",
+    "metodo": "Cómo calculamos",
+    "acerca": "Acerca",
+    "privacidad": "Privacidad",
+    "paraDormir": "Para dormir"
+  },
+
+  "video": {
+    "aviso": "Puede aparecer un anuncio antes del video.",
+    "reproducir": "Reproducir «{titulo}»",
+    "duracion": "{x} min",
+    "canal": "Canal: {canal}"
+  },
+
+  "tipos": {
+    "yoga-nidra": "Yoga nidra",
+    "meditacion": "Meditaciones",
+    "escaneo-corporal": "Escaneos corporales",
+    "ambiente": "Sonidos de ambiente"
+  },
+
+  "paraDormir": {
+    "metaTitulo": "Meditaciones y sonidos para dormir | cuánto dormir",
+    "metaDescripcion": "Meditaciones guiadas, escaneos corporales y sonidos de ambiente para dormir, elegidos con cariño. Solo cargan cuando tú los tocas.",
+    "titulo": "Para dormir",
+    "intro": "Meditaciones, escaneos corporales de unos 15 minutos y sonidos de ambiente que elegimos con cariño. Cada video carga solo cuando lo tocas, desde la versión de YouTube que no usa cookies.",
+    "vacio": "Estamos eligiendo con calma las primeras meditaciones y sonidos. Vuelve pronto."
+  },
+
+  "error404": {
+    "metaTitulo": "Página no encontrada | cuánto dormir",
+    "titulo": "Esta página se quedó dormida.",
+    "texto": "Puede que el enlace haya cambiado. Te acompañamos de vuelta.",
+    "volver": "Volver al inicio"
+  },
+
+  "sinConexion": "Estás sin internet, pero la calculadora sigue funcionando.",
+
+  "sugerencia": {
+    "texto": "Esta página también está en español",
+    "cambiar": "Cambiar",
+    "cerrar": "Cerrar"
+  },
+
+  "guia": {
+    "metaTitulo": "Guía del buen dormir | cuánto dormir",
+    "metaDescripcion": "Artículos breves y honestos sobre ciclos de sueño, siestas, cafeína y descanso, con sus fuentes científicas a la vista.",
+    "titulo": "Guía del buen dormir",
+    "intro": "Textos breves para entender tu descanso, con las fuentes a la vista y sin promesas.",
+    "pronto": "Estamos preparando los primeros artículos. Vuelve pronto.",
+    "soloEspanol": "",
+    "enEspanol": "",
+    "loEsencial": "Lo esencial",
+    "fuentes": "Fuentes",
+    "enlacePendiente": "[ENLACE PENDIENTE]",
+    "actualizado": "Actualizado el {fecha}",
+    "lectura": "{n} min de lectura",
+    "borrador": "Borrador en revisión: Clariónida todavía está revisando este texto.",
+    "autoria": "Escrito por Clariónida",
+    "autoriaTexto": "Un grupo de personas multipotenciales y curiosas detrás de cuánto dormir. Basamos cada texto en investigación publicada y te contamos de dónde viene.",
+    "autoriaEnlace": "Conoce más sobre Clariónida",
+    "prueba": "Prueba la calculadora",
+    "migas": "Migas de pan",
+    "otros": "Sigue leyendo"
+  },
+
+  "paginasMeta": {
+    "preguntas": {
+      "metaTitulo": "Preguntas frecuentes sobre ciclos de sueño | cuánto dormir",
+      "metaDescripcion": "¿Por qué 90 minutos? ¿Qué pasa si despierto a mitad de un ciclo? Respuestas breves y honestas sobre la calculadora y el sueño.",
+      "titulo": "Preguntas frecuentes"
+    }
+  },
+
+  "fechas": {
+    "locale": "es-MX"
+  }
+}

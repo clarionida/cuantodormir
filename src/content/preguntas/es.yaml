@@ -1,0 +1,53 @@
+# Preguntas frecuentes en español.
+# Cada pregunta lleva "pregunta" y "respuesta". En la respuesta puedes usar
+# enlaces así: [texto](https://…) y separar párrafos con una línea en blanco.
+preguntas:
+  - pregunta: "¿Por qué la calculadora usa ciclos de 90 minutos?"
+    respuesta: |
+      Porque es el promedio más citado para un ciclo de sueño en personas adultas. Es una aproximación: en un estudio con 6064 ciclos registrados en laboratorio, la mediana fue de 96 minutos, el primer ciclo de la noche fue más corto y hubo mucha variación entre personas ([Sleep Health, 2024](https://pubmed.ncbi.nlm.nih.gov/37914631/)).
+
+      Si sueles despertar con pesadez aunque calcules bien, puedes probar con un ciclo un poco más largo en "Ajustar mi ciclo" (de 80 a 110 minutos).
+
+  - pregunta: "¿Qué pasa si despierto a mitad de un ciclo?"
+    respuesta: |
+      Puede que sientas la mente nublada unos minutos. A ese estado se le llama inercia del sueño: una baja temporal de la alerta y el rendimiento justo después de despertar, que suele ser más intensa al despertar desde sueño profundo o tras dormir poco ([Hilditch y McHill, 2019](https://pubmed.ncbi.nlm.nih.gov/31692489/)). Con el tiempo se disipa. La calculadora busca que despiertes al final de un ciclo para que sea menos probable, aunque no lo puede garantizar.
+
+  - pregunta: "¿Es mejor dormir 6 horas que 7 si así despierto al final de un ciclo?"
+    respuesta: |
+      No. Despertar al final de un ciclo puede ayudarte a sentirte con más ligereza al levantarte, pero no sustituye las horas de sueño. Las guías recomiendan que las personas adultas duerman 7 horas o más por noche de forma regular ([Watson y otros, 2015](https://pubmed.ncbi.nlm.nih.gov/25979105/)). Por eso marcamos como "Recomendado" las opciones de 5 y 6 ciclos (de 7 h 30 min a 9 h).
+
+  - pregunta: "¿Cuántas horas debería dormir?"
+    respuesta: |
+      En personas adultas, 7 horas o más por noche de forma regular ([Watson y otros, 2015](https://pubmed.ncbi.nlm.nih.gov/25979105/)). La National Sleep Foundation propone de 7 a 9 horas entre los 18 y los 64 años, y de 7 a 8 horas desde los 65 ([Hirshkowitz y otros, 2015](https://pubmed.ncbi.nlm.nih.gov/29073412/)). Cada persona es distinta; en la guía tienes [la tabla completa por edades](/guia/cuantas-horas-dormir-segun-edad/).
+
+  - pregunta: "¿Por qué suman 15 minutos para dormirme?"
+    respuesta: |
+      Porque casi nadie se duerme en cuanto cierra los ojos. Por defecto sumamos 15 minutos, y puedes cambiarlo de 1 a 120 minutos con la rueda "¿Cuánto tardas en dormirte?". Tu elección se guarda en tu dispositivo y se usa en las cuatro pestañas. Si tardar en dormirte te pasa seguido, lee [cuánto tardas en dormirte](/guia/cuanto-tardas-en-dormirte/).
+
+  - pregunta: "¿Sirve si trabajo de noche o por turnos?"
+    respuesta: |
+      La fórmula funciona a cualquier hora: puedes calcular a qué hora acostarte para despertar a las 3:00 p. m., por ejemplo. Pero dormir de día tiene sus propias dificultades, y una calculadora no las resuelve. Si trabajas por turnos y el sueño te cuesta, vale la pena platicarlo con un profesional de la salud.
+
+  - pregunta: "¿Sirve para niñas y niños?"
+    respuesta: |
+      Está pensada para personas adultas. En la infancia los ciclos de sueño son más cortos y la estructura del sueño es distinta (Ohayon y otros, 2004 [ENLACE PENDIENTE]), y además necesitan más horas de sueño según su edad ([Hirshkowitz y otros, 2015](https://pubmed.ncbi.nlm.nih.gov/29073412/)). Para ellas y ellos, lo mejor es seguir las indicaciones de su pediatra.
+
+  - pregunta: "¿Cuánto debe durar una siesta?"
+    respuesta: |
+      Depende de lo que busques. En un estudio con personas jóvenes que habían dormido poco, la siesta de 10 minutos dio las mejoras más inmediatas; las de 20 y 30 minutos también ayudaron, pero después de un rato de aturdimiento ([Brooks y Lack, 2006](https://pubmed.ncbi.nlm.nih.gov/16796222/)). En la [calculadora de siesta](/siesta/) te damos opciones de 10, 18 y 25 minutos, y un ciclo completo de 90.
+
+  - pregunta: "¿Por qué a veces despierto con cansancio aunque calcule bien?"
+    respuesta: |
+      Puede haber varias razones. Tu ciclo puede durar más o menos de 90 minutos, y cambia de una noche a otra ([Sleep Health, 2024](https://pubmed.ncbi.nlm.nih.gov/37914631/)). Puede que hayas tardado más en dormirte de lo que calculaste, o que llevaras varias noches durmiendo poco. Prueba a ajustar tu ciclo o tu tiempo para dormirte. Y si el cansancio es frecuente, platícalo con un profesional de la salud.
+
+  - pregunta: "¿La calculadora reemplaza a un médico?"
+    respuesta: |
+      No. cuánto dormir es una guía amable, no un consejo médico. Si dormir te cuesta seguido, si tienes mucho sueño durante el día o si alguien nota que roncas muy fuerte o haces pausas al respirar, vale la pena platicarlo con un profesional de la salud. Te contamos más en [cuándo buscar ayuda profesional](/guia/cuando-buscar-ayuda-profesional/).
+
+  - pregunta: "¿Guardan mis datos o mi ubicación?"
+    respuesta: |
+      No. Usamos la hora de tu dispositivo y nunca pedimos tu ubicación. Lo que eliges (por ejemplo, cuánto tardas en dormirte) se guarda solo en tu navegador. No usamos cookies, rastreadores ni anuncios. Lo explicamos en [privacidad](/privacidad/).
+
+  - pregunta: "¿Funciona sin internet?"
+    respuesta: |
+      Sí. Después de tu primera visita, la calculadora sigue funcionando aunque no tengas conexión. También puedes añadirla a la pantalla de inicio de tu celular para tenerla a un toque.

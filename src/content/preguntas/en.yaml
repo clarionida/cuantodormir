@@ -1,0 +1,53 @@
+# Frequently asked questions in English.
+# Each question has a "pregunta" (question) and a "respuesta" (answer). In the answer you can use
+# links like this: [text](https://…) and separate paragraphs with a blank line.
+preguntas:
+  - pregunta: "Why does the calculator use 90-minute cycles?"
+    respuesta: |
+      Because it’s the most widely cited average for a sleep cycle in adults. It’s an approximation: in a study of 6,064 cycles recorded in a sleep lab, the median was 96 minutes, the first cycle of the night was shorter and there was a lot of variation from person to person ([Sleep Health, 2024](https://pubmed.ncbi.nlm.nih.gov/37914631/)).
+
+      If you often wake up groggy even when you time it well, you can try a slightly longer cycle in “Adjust my cycle” (from 80 to 110 minutes).
+
+  - pregunta: "What happens if I wake up in the middle of a cycle?"
+    respuesta: |
+      You might feel a bit foggy for a few minutes. That state is called sleep inertia: a temporary dip in alertness and performance right after waking up, which tends to be stronger when you wake from deep sleep or after sleeping little ([Hilditch and McHill, 2019](https://pubmed.ncbi.nlm.nih.gov/31692489/)). It fades with time. The calculator aims for you to wake up at the end of a cycle so it’s less likely, though it can’t guarantee it.
+
+  - pregunta: "Is it better to sleep 6 hours instead of 7 if that means waking up at the end of a cycle?"
+    respuesta: |
+      No. Waking up at the end of a cycle may help you feel lighter when you get up, but it doesn’t make up for hours of sleep. Guidelines recommend that adults sleep 7 hours or more per night on a regular basis ([Watson et al., 2015](https://pubmed.ncbi.nlm.nih.gov/25979105/)). That’s why we mark the 5- and 6-cycle options (from 7 h 30 min to 9 h) as “Recommended.”
+
+  - pregunta: "How many hours should I sleep?"
+    respuesta: |
+      For adults, 7 hours or more per night on a regular basis ([Watson et al., 2015](https://pubmed.ncbi.nlm.nih.gov/25979105/)). The National Sleep Foundation suggests 7 to 9 hours between ages 18 and 64, and 7 to 8 hours from age 65 on ([Hirshkowitz et al., 2015](https://pubmed.ncbi.nlm.nih.gov/29073412/)). Everyone is different; the guide has [the full table by age](/guia/cuantas-horas-dormir-segun-edad/) (in Spanish).
+
+  - pregunta: "Why do you add 15 minutes for falling asleep?"
+    respuesta: |
+      Because hardly anyone falls asleep the moment they close their eyes. By default we add 15 minutes, and you can change it to anything from 1 to 120 minutes with the “How long does it take you to fall asleep?” wheel. Your choice is saved on your device and used in all four tabs. If it often takes you a while to fall asleep, read [how long it takes you to fall asleep](/guia/cuanto-tardas-en-dormirte/) (in Spanish).
+
+  - pregunta: "Does it work if I work nights or shifts?"
+    respuesta: |
+      The formula works at any hour: you can calculate what time to go to bed to wake up at 3:00 PM, for example. But sleeping during the day comes with its own challenges, and a calculator can’t solve them. If you work shifts and sleep is hard for you, it’s worth talking it over with a health professional.
+
+  - pregunta: "Is it suitable for children?"
+    respuesta: |
+      It’s designed for adults. In childhood, sleep cycles are shorter and sleep is structured differently (Ohayon et al., 2004 [LINK PENDING]), and children also need more hours of sleep depending on their age ([Hirshkowitz et al., 2015](https://pubmed.ncbi.nlm.nih.gov/29073412/)). For them, it’s best to follow their pediatrician’s guidance.
+
+  - pregunta: "How long should a nap be?"
+    respuesta: |
+      It depends on what you’re looking for. In a study with young people who had slept little, the 10-minute nap brought the most immediate improvements; the 20- and 30-minute naps also helped, but only after a stretch of grogginess ([Brooks and Lack, 2006](https://pubmed.ncbi.nlm.nih.gov/16796222/)). In the [nap calculator](/en/nap/) we offer options of 10, 18 and 25 minutes, plus a full 90-minute cycle.
+
+  - pregunta: "Why do I sometimes wake up tired even when I time it well?"
+    respuesta: |
+      There can be a few reasons. Your cycle may last more or less than 90 minutes, and it changes from one night to the next ([Sleep Health, 2024](https://pubmed.ncbi.nlm.nih.gov/37914631/)). You may have taken longer to fall asleep than you planned, or you may have had several nights of too little sleep. Try adjusting your cycle or your time to fall asleep. And if you feel tired often, talk it over with a health professional.
+
+  - pregunta: "Does the calculator replace a doctor?"
+    respuesta: |
+      No. cuánto dormir is a gentle guide, not medical advice. If sleep is often hard for you, if you feel very sleepy during the day or if someone notices that you snore very loudly or pause while breathing, it’s worth talking it over with a health professional. We share more in [when to seek professional help](/guia/cuando-buscar-ayuda-profesional/) (in Spanish).
+
+  - pregunta: "Do you store my data or my location?"
+    respuesta: |
+      No. We use your device’s time and never ask for your location. What you choose (for example, how long it takes you to fall asleep) is saved only in your browser. We don’t use cookies, trackers or ads. We explain it all in [Privacy](/en/privacy/).
+
+  - pregunta: "Does it work offline?"
+    respuesta: |
+      Yes. After your first visit, the calculator keeps working even without a connection. You can also add it to your phone’s home screen so it’s always one tap away.

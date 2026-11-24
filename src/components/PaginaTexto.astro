@@ -1,0 +1,72 @@
+---
+// Páginas de texto: "Cómo calculamos", "Acerca" y "Privacidad".
+// El contenido está en src/content/paginas/<idioma>/<archivo>.md
+import { getEntry, render } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { sitio } from '../config/sitio';
+import { alternativasDe, t, type ClavePagina } from '../i18n/rutas';
+import type { Idioma } from '../lib/hora';
+
+interface Props {
+  idioma: Idioma;
+  clave: Extract<ClavePagina, 'metodo' | 'acerca' | 'privacidad'>;
+}
+const { idioma, clave } = Astro.props;
+const tx = t(idioma);
+const archivo = { metodo: 'como-calculamos', acerca: 'acerca', privacidad: 'privacidad' }[clave];
+const entrada = await getEntry('paginas', `${idioma}/${archivo}`);
+if (!entrada) throw new Error(`Falta src/content/paginas/${idioma}/${archivo}.md`);
+const { Content } = await render(entrada);
+const { titulo, metaTitulo, descripcion, intro } = entrada.data;
+
+// En "Acerca": Linktree y las redes que tengan enlace en sitio.ts.
+const nombresRedes: Record<string, string> = {
+  instagram: 'Instagram',
+  tiktok: 'TikTok',
+  youtube: 'YouTube',
+  x: 'X',
+  threads: 'Threads',
+  bluesky: 'Bluesky',
+  facebook: 'Facebook',
+  pinterest: 'Pinterest',
+  spotify: 'Spotify',
+};
+const redes = [
+  { nombre: 'Linktree', url: sitio.enlaces.linktree },
+  ...Object.entries(sitio.redes)
+    .filter(([, url]) => url)
+    .map(([clave, url]) => ({ nombre: nombresRedes[clave] ?? clave, url })),
+];
+---
+
+<Base
+  idioma={idioma}
+  titulo={metaTitulo ?? `${titulo} | cuánto dormir`}
+  descripcion={descripcion ?? tx.lema}
+  alternativas={alternativasDe(clave)}
+  conLema={false}
+>
+  <article class="contenedor-texto">
+    <header class="pagina-cabecera">
+      <h1>{titulo}</h1>
+      {intro && <p>{intro}</p>}
+    </header>
+    <div class="prosa">
+      <Content />
+      {
+        clave === 'acerca' && (
+          <ul>
+            {redes.map((r) => (
+              <li>
+                <a href={r.url} target="_blank" rel="noopener">
+                  {r.nombre}
+                  <span class="sr-only"> {tx.pie.nuevaPestana}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        )
+      }
+    </div>
+  </article>
+</Base>

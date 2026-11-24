@@ -1,0 +1,232 @@
+{
+  "idioma": "en",
+  "htmlLang": "en",
+  "hreflang": "en",
+  "ogLocale": "en_US",
+  "nombre": "English",
+  "corto": "EN",
+
+  "lema": "Find your best times to sleep, and wake up feeling lighter.",
+  "saltar": "Skip to content",
+  "inicio": "Home",
+  "navCalculadoras": "Calculators",
+  "navIdioma": "Language",
+  "irAlInicio": "cuánto dormir, go to home page",
+
+  "pestanas": {
+    "despertar": "Wake up at…",
+    "ahora": "Sleep now",
+    "acostarse": "Sleep at…",
+    "siesta": "Nap"
+  },
+
+  "calculadoras": {
+    "despertar": {
+      "metaTitulo": "cuánto dormir: sleep cycle calculator",
+      "metaDescripcion": "Find out what time to go to bed so you wake up at the end of a sleep cycle of about 90 minutes. Free, ad-free and made for nighttime.",
+      "titulo": "What time do you want to wake up?",
+      "subtitulo": "We’ll suggest when to get into bed and close your eyes, so you wake up at the end of a cycle.",
+      "etiquetaHora": "Wake-up time",
+      "resultados": "Good times to go to bed",
+      "nombreApp": "Sleep cycle calculator: what time to go to bed"
+    },
+    "ahora": {
+      "metaTitulo": "If I fall asleep now, when should I wake up? | cuánto dormir",
+      "metaDescripcion": "If you go to sleep now, we’ll tell you when to set your alarm to wake up at the end of a sleep cycle. The time it takes you to fall asleep is included.",
+      "titulo": "Heading to bed now?",
+      "subtitulo": "We’ll count from this moment.",
+      "resultados": "Good times to wake up",
+      "nombreApp": "Calculator: if I fall asleep now, when to wake up"
+    },
+    "acostarse": {
+      "metaTitulo": "What time to wake up if I go to bed at a certain time?",
+      "metaDescripcion": "Choose when you’ll go to bed and find the best times to wake up between sleep cycles of about 90 minutes. Free and ad-free.",
+      "titulo": "What time are you going to bed?",
+      "subtitulo": "Choose the time you’ll get into bed and close your eyes.",
+      "etiquetaHora": "Bedtime",
+      "resultados": "Good times to wake up",
+      "nombreApp": "Calculator: when to wake up based on your bedtime"
+    },
+    "siesta": {
+      "metaTitulo": "Nap calculator: what time to wake up | cuánto dormir",
+      "metaDescripcion": "Find out when to end a 10, 18, 25 or 90-minute nap, with the time it takes you to fall asleep already included. No ads, no sign-up.",
+      "titulo": "A nap that fits you",
+      "subtitulo": "If you lie down now, we’ll tell you when to set your alarm.",
+      "resultados": "Good times to end your nap",
+      "nombreApp": "Nap calculator"
+    }
+  },
+
+  "rueda": {
+    "hora": "Hour",
+    "minutos": "Minutes",
+    "periodo": "AM or PM"
+  },
+
+  "latencia": {
+    "etiqueta": "How long does it take you to fall asleep?",
+    "columna": "Minutes to fall asleep",
+    "unidad": "min",
+    "valorTexto": "{x} minutes",
+    "nota": "On average, about 15 minutes.",
+    "info": "Most people take between 10 and 20 minutes to fall asleep. Less than 5 minutes may be a sign of being very tired, and regularly taking more than 30 minutes may point to trouble falling asleep.",
+    "infoBoton": "More about how long it takes to fall asleep",
+    "cerrar": "Close"
+  },
+
+  "ajuste": {
+    "enlace": "Adjust my cycle",
+    "explica": "If you often wake up groggy even when you time it well, try a slightly longer cycle.",
+    "etiqueta": "Your cycle length",
+    "restablecer": "Back to 90 min"
+  },
+
+  "calcular": "Calculate",
+  "relojPlural": "It’s {hora} right now.",
+  "relojSingular": "It’s {hora} right now.",
+  "calculadoPlural": "Calculated at {hora}.",
+  "calculadoSingular": "Calculated at {hora}.",
+  "sinJs": "The calculator needs JavaScript to work. In the meantime, there’s a table with times already calculated below.",
+
+  "resultados": {
+    "ciclos": "{n} cycles · {duracion} of sleep",
+    "ciclo": "1 cycle · {duracion} of sleep",
+    "siesta": "{duracion} of sleep",
+    "recomendado": "Recommended",
+    "yaPaso": "Already passed",
+    "notaLatencia": "We’ve already added the {x} min it takes you to fall asleep.",
+    "explicaRecomendado": "We suggest 5 or 6 cycles (7 h 30 min to 9 h), in line with the 7 or more hours that guidelines recommend for adults.",
+    "fuenteRecomendado": "Source: Watson et al., 2015",
+    "siestas": {
+      "10": "Power nap: it usually clears your head right away.",
+      "18": "Short nap: a little breather for the rest of the afternoon.",
+      "25": "Long nap: you may need a few minutes to shake off the grogginess.",
+      "90": "A full cycle: ideal if you were short on sleep last night."
+    },
+    "despedidas": [
+      "Rest well.",
+      "Sweet dreams.",
+      "May the night be gentle with you.",
+      "Tomorrow is another day; for now, rest."
+    ],
+    "cambiar": "Change my details",
+    "nueva": "Start over",
+    "compartir": "Share",
+    "copiado": "Link copied.",
+    "compartirTitulo": "My sleep times · cuánto dormir",
+    "recalcular": "Recalculate with the current time",
+    "acompanarte": "To keep you company",
+    "acompanarteIntro": "If it helps you let go of the day, here’s a guided practice of the same length.",
+    "paraSiesta": "For the {x}-min nap"
+  },
+
+  "ejemplos": {
+    "titulo": "Example, already calculated",
+    "notaLatencia": "With 15 minutes to fall asleep and 90-minute cycles.",
+    "despertarCaption": "Bedtimes based on when you wake up",
+    "despertarColumna": "If you wake up at",
+    "inicioCaption": "Wake-up times based on when you go to bed",
+    "inicioColumna": "If you go to bed at",
+    "siestaCaption": "When to end your nap based on when you lie down",
+    "siestaColumna": "If you lie down at",
+    "ciclosColumna": "{n} cycles ({duracion})",
+    "siestaMinColumna": "{x} min"
+  },
+
+  "pie": {
+    "aviso": "A gentle guide, not medical advice. If sleep is often hard for you, it’s worth talking it over with a health professional.",
+    "credito": "Made with care by Clariónida",
+    "redes": "Clariónida on social media",
+    "enlaces": "More from cuánto dormir",
+    "nuevaPestana": "(opens in a new tab)",
+    "instalar": "Add it to your home screen",
+    "instalarIphone": "On iPhone: open the site in Safari, tap the Share button, then “Add to Home Screen”.",
+    "instalarAndroid": "On Android: open the site in Chrome, tap the ⋮ menu, then “Add to Home screen” or “Install app”.",
+    "instalarNota": "That way it’s one tap away, and it works even without internet."
+  },
+
+  "donacion": {
+    "texto": "Did this help you rest? This little corner is free and ad-free. If you feel like it, you can buy me a tea.",
+    "boton": "Buy me a tea"
+  },
+
+  "menu": {
+    "guia": "Guide",
+    "preguntas": "FAQ",
+    "metodo": "How we calculate",
+    "acerca": "About",
+    "privacidad": "Privacy",
+    "paraDormir": "For sleep"
+  },
+
+  "video": {
+    "aviso": "An ad may play before the video.",
+    "reproducir": "Play “{titulo}”",
+    "duracion": "{x} min",
+    "canal": "Channel: {canal}"
+  },
+
+  "tipos": {
+    "yoga-nidra": "Yoga nidra",
+    "meditacion": "Meditations",
+    "escaneo-corporal": "Body scans",
+    "ambiente": "Ambient sounds"
+  },
+
+  "paraDormir": {
+    "metaTitulo": "Meditations and sounds for sleep | cuánto dormir",
+    "metaDescripcion": "Guided meditations, body scans and ambient sounds for sleep, chosen with care. They only load when you tap them.",
+    "titulo": "For sleep",
+    "intro": "Meditations, body scans of about 15 minutes and ambient sounds we chose with care. Each video only loads when you tap it, from the version of YouTube that doesn’t use cookies.",
+    "vacio": "We’re calmly choosing the first meditations and sounds. Come back soon."
+  },
+
+  "error404": {
+    "metaTitulo": "Page not found | cuánto dormir",
+    "titulo": "This page fell asleep.",
+    "texto": "The link may have changed. Let us walk you back.",
+    "volver": "Back to home"
+  },
+
+  "sinConexion": "You’re offline, but the calculator still works.",
+
+  "sugerencia": {
+    "texto": "This page is also in English",
+    "cambiar": "Switch",
+    "cerrar": "Close"
+  },
+
+  "guia": {
+    "metaTitulo": "Sleep guide | cuánto dormir",
+    "metaDescripcion": "Short, honest articles about sleep cycles, naps, caffeine and rest, with their scientific sources in plain view.",
+    "titulo": "Sleep guide",
+    "intro": "Short reads to help you understand your rest, with sources in plain view and no promises.",
+    "pronto": "We’re preparing the first articles. Come back soon.",
+    "soloEspanol": "For now our articles are only in Spanish. English versions are on their way, as soon as each one has been carefully reviewed.",
+    "enEspanol": "in Spanish",
+    "loEsencial": "Key points",
+    "fuentes": "Sources",
+    "enlacePendiente": "[LINK PENDING]",
+    "actualizado": "Updated {fecha}",
+    "lectura": "{n} min read",
+    "borrador": "Draft under review: Clariónida is still reviewing this text.",
+    "autoria": "Written by Clariónida",
+    "autoriaTexto": "A group of multipotentialite, curious people behind cuánto dormir. Every text is based on published research, and we tell you where it comes from.",
+    "autoriaEnlace": "More about Clariónida",
+    "prueba": "Try the calculator",
+    "migas": "Breadcrumb",
+    "otros": "Keep reading"
+  },
+
+  "paginasMeta": {
+    "preguntas": {
+      "metaTitulo": "Sleep cycle FAQ | cuánto dormir",
+      "metaDescripcion": "Why 90 minutes? What if I wake up in the middle of a cycle? Short, honest answers about the calculator and sleep.",
+      "titulo": "Frequently asked questions"
+    }
+  },
+
+  "fechas": {
+    "locale": "en-US"
+  }
+}

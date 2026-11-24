@@ -1,0 +1,108 @@
+---
+// Pie de página: enlaces, redes (íconos monocromos), donación, instalar,
+// aviso médico y crédito.
+import {
+  siBluesky,
+  siFacebook,
+  siInstagram,
+  siLinktree,
+  siPinterest,
+  siSpotify,
+  siThreads,
+  siTiktok,
+  siX,
+  siYoutube,
+} from 'simple-icons';
+import Donacion from './Donacion.astro';
+import { sitio } from '../config/sitio';
+import { ruta, t } from '../i18n/rutas';
+import { hayAudios } from '../lib/audios';
+import type { Idioma } from '../lib/hora';
+
+interface Props {
+  idioma: Idioma;
+}
+const { idioma } = Astro.props;
+const tx = t(idioma);
+
+const iconos = {
+  linktree: siLinktree,
+  instagram: siInstagram,
+  tiktok: siTiktok,
+  youtube: siYoutube,
+  x: siX,
+  threads: siThreads,
+  bluesky: siBluesky,
+  facebook: siFacebook,
+  pinterest: siPinterest,
+  spotify: siSpotify,
+} as const;
+
+// Linktree siempre; las demás redes solo si tienen enlace en sitio.ts.
+const redes = [
+  { clave: 'linktree' as const, url: sitio.enlaces.linktree },
+  ...Object.entries(sitio.redes)
+    .filter(([, url]) => url)
+    .map(([clave, url]) => ({ clave: clave as keyof typeof iconos, url })),
+].map((r) => ({ ...r, icono: iconos[r.clave] }));
+
+const enlaces = [
+  { href: ruta('guia', idioma), texto: tx.menu.guia },
+  { href: ruta('preguntas', idioma), texto: tx.menu.preguntas },
+  { href: ruta('metodo', idioma), texto: tx.menu.metodo },
+  ...(hayAudios ? [{ href: ruta('paraDormir', idioma), texto: tx.menu.paraDormir }] : []),
+  { href: ruta('acerca', idioma), texto: tx.menu.acerca },
+  { href: ruta('privacidad', idioma), texto: tx.menu.privacidad },
+];
+---
+
+<footer class="pie">
+  <div class="contenedor">
+    <nav class="pie-enlaces" aria-label={tx.pie.enlaces}>
+      <ul>
+        {
+          enlaces.map((e) => (
+            <li>
+              <a href={e.href}>{e.texto}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+
+    <ul class="redes" aria-label={tx.pie.redes}>
+      {
+        redes.map((r) => (
+          <li>
+            <a
+              href={r.url}
+              target="_blank"
+              rel="noopener"
+              aria-label={`${r.icono.title} ${tx.pie.nuevaPestana}`}
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d={r.icono.path} />
+              </svg>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+
+    <div class="pie-donacion">
+      <Donacion idioma={idioma} />
+    </div>
+
+    <details class="instalar">
+      <summary>{tx.pie.instalar}</summary>
+      <ul>
+        <li>{tx.pie.instalarIphone}</li>
+        <li>{tx.pie.instalarAndroid}</li>
+      </ul>
+      <p>{tx.pie.instalarNota}</p>
+    </details>
+
+    <p class="pie-aviso">{tx.pie.aviso}</p>
+    <p class="credito">{tx.pie.credito}</p>
+  </div>
+</footer>

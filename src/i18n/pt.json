@@ -1,0 +1,232 @@
+{
+  "idioma": "pt",
+  "htmlLang": "pt-BR",
+  "hreflang": "pt-BR",
+  "ogLocale": "pt_BR",
+  "nombre": "Português",
+  "corto": "PT",
+
+  "lema": "Calcule seus horários para dormir e acordar com mais leveza.",
+  "saltar": "Pular para o conteúdo",
+  "inicio": "Início",
+  "navCalculadoras": "Calculadoras",
+  "navIdioma": "Idioma",
+  "irAlInicio": "cuánto dormir, ir para o início",
+
+  "pestanas": {
+    "despertar": "Acordar às…",
+    "ahora": "Dormir agora",
+    "acostarse": "Dormir às…",
+    "siesta": "Soneca"
+  },
+
+  "calculadoras": {
+    "despertar": {
+      "metaTitulo": "cuánto dormir: calculadora de ciclos de sono",
+      "metaDescripcion": "Descubra a que horas deitar para acordar no fim de um ciclo de sono de cerca de 90 minutos. Grátis, sem anúncios e pensada para a noite.",
+      "titulo": "A que horas você quer acordar?",
+      "subtitulo": "Sugerimos a que horas deitar e fechar os olhos para acordar no fim de um ciclo.",
+      "etiquetaHora": "Hora de acordar",
+      "resultados": "Bons horários para deitar",
+      "nombreApp": "Calculadora de ciclos de sono: a que horas deitar"
+    },
+    "ahora": {
+      "metaTitulo": "Se eu dormir agora, que horas acordo? | cuánto dormir",
+      "metaDescripcion": "Se você for dormir agora, dizemos a que horas colocar o despertador para acordar no fim de um ciclo de sono. O tempo para pegar no sono já está somado.",
+      "titulo": "Vai dormir agora?",
+      "subtitulo": "Vamos calcular a partir deste momento.",
+      "resultados": "Bons horários para acordar",
+      "nombreApp": "Calculadora: se eu dormir agora, que horas acordar"
+    },
+    "acostarse": {
+      "metaTitulo": "Que horas acordar se eu deitar em um certo horário?",
+      "metaDescripcion": "Escolha a que horas você vai deitar e veja os melhores horários para acordar entre ciclos de sono de cerca de 90 minutos. Grátis e sem anúncios.",
+      "titulo": "A que horas você pretende deitar?",
+      "subtitulo": "Escolha a hora em que você vai se deitar e fechar os olhos.",
+      "etiquetaHora": "Hora de deitar",
+      "resultados": "Bons horários para acordar",
+      "nombreApp": "Calculadora: que horas acordar conforme a hora de deitar"
+    },
+    "siesta": {
+      "metaTitulo": "Calculadora de soneca: que horas acordar | cuánto dormir",
+      "metaDescripcion": "Descubra a que horas terminar sua soneca de 10, 18, 25 ou 90 minutos, com o tempo para pegar no sono já somado. Sem anúncios nem cadastro.",
+      "titulo": "Uma soneca do seu jeito",
+      "subtitulo": "Se você se deitar agora, dizemos a que horas colocar o despertador.",
+      "resultados": "Bons horários para terminar sua soneca",
+      "nombreApp": "Calculadora de soneca"
+    }
+  },
+
+  "rueda": {
+    "hora": "Hora",
+    "minutos": "Minutos",
+    "periodo": ""
+  },
+
+  "latencia": {
+    "etiqueta": "Quanto tempo você leva para pegar no sono?",
+    "columna": "Minutos para pegar no sono",
+    "unidad": "min",
+    "valorTexto": "{x} minutos",
+    "nota": "Em média, uns 15 minutos.",
+    "info": "A maioria das pessoas leva entre 10 e 20 minutos para pegar no sono. Menos de 5 minutos pode ser sinal de muito cansaço, e levar mais de 30 minutos com frequência pode indicar dificuldade para adormecer.",
+    "infoBoton": "Mais informações sobre o tempo para pegar no sono",
+    "cerrar": "Fechar"
+  },
+
+  "ajuste": {
+    "enlace": "Ajustar meu ciclo",
+    "explica": "Se você costuma acordar com a cabeça pesada mesmo calculando bem, experimente um ciclo um pouco mais longo.",
+    "etiqueta": "Duração do seu ciclo",
+    "restablecer": "Voltar para 90 min"
+  },
+
+  "calcular": "Calcular",
+  "relojPlural": "Agora são {hora}.",
+  "relojSingular": "Agora é {hora}.",
+  "calculadoPlural": "Calculado às {hora}.",
+  "calculadoSingular": "Calculado à {hora}.",
+  "sinJs": "A calculadora precisa de JavaScript para funcionar. Enquanto isso, mais abaixo há uma tabela com horários já calculados.",
+
+  "resultados": {
+    "ciclos": "{n} ciclos · {duracion} de sono",
+    "ciclo": "1 ciclo · {duracion} de sono",
+    "siesta": "{duracion} de sono",
+    "recomendado": "Recomendado",
+    "yaPaso": "Já passou",
+    "notaLatencia": "Já somamos os {x} min que você leva para pegar no sono.",
+    "explicaRecomendado": "Sugerimos 5 ou 6 ciclos (de 7 h 30 min a 9 h), em linha com as 7 horas ou mais que as diretrizes recomendam para pessoas adultas.",
+    "fuenteRecomendado": "Fonte: Watson e colaboradores, 2015",
+    "siestas": {
+      "10": "Soneca relâmpago: costuma clarear a mente na hora.",
+      "18": "Soneca curta: um respiro para o resto da tarde.",
+      "25": "Soneca longa: talvez você precise de uns minutos para despertar de vez.",
+      "90": "Um ciclo completo: ideal se faltou sono ontem à noite."
+    },
+    "despedidas": [
+      "Bom descanso.",
+      "Bons sonhos.",
+      "Que a noite seja gentil com você.",
+      "Amanhã é outro dia; por agora, descanse."
+    ],
+    "cambiar": "Mudar meus dados",
+    "nueva": "Nova consulta",
+    "compartir": "Compartilhar",
+    "copiado": "Link copiado.",
+    "compartirTitulo": "Meus horários para dormir · cuánto dormir",
+    "recalcular": "Recalcular com o horário de agora",
+    "acompanarte": "Para te acompanhar",
+    "acompanarteIntro": "Se ajudar você a desacelerar, aqui está uma prática guiada com a mesma duração.",
+    "paraSiesta": "Para a soneca de {x} min"
+  },
+
+  "ejemplos": {
+    "titulo": "Exemplo já calculado",
+    "notaLatencia": "Com 15 minutos para pegar no sono e ciclos de 90 minutos.",
+    "despertarCaption": "Horários para deitar conforme a hora de acordar",
+    "despertarColumna": "Se você acorda às",
+    "inicioCaption": "Horários para acordar conforme a hora em que você deita",
+    "inicioColumna": "Se você deita às",
+    "siestaCaption": "Horários para terminar a soneca conforme a hora em que você se deita",
+    "siestaColumna": "Se você se deita às",
+    "ciclosColumna": "{n} ciclos ({duracion})",
+    "siestaMinColumna": "{x} min"
+  },
+
+  "pie": {
+    "aviso": "Um guia gentil, não um conselho médico. Se dormir costuma ser difícil para você, vale a pena conversar com um profissional de saúde.",
+    "credito": "Feito com carinho por Clariónida",
+    "redes": "Redes da Clariónida",
+    "enlaces": "Mais do cuánto dormir",
+    "nuevaPestana": "(abre em uma nova aba)",
+    "instalar": "Adicione à sua tela inicial",
+    "instalarIphone": "No iPhone: abra o site no Safari, toque no botão Compartilhar e depois em “Adicionar à Tela de Início”.",
+    "instalarAndroid": "No Android: abra o site no Chrome, toque no menu ⋮ e depois em “Adicionar à tela inicial” ou “Instalar app”.",
+    "instalarNota": "Assim ela fica a um toque, e funciona mesmo sem internet."
+  },
+
+  "donacion": {
+    "texto": "Isso te ajudou a descansar? Este cantinho é gratuito e sem anúncios. Se tiver vontade, você pode me pagar um chá.",
+    "boton": "Me paga um chá"
+  },
+
+  "menu": {
+    "guia": "Guia",
+    "preguntas": "Perguntas frequentes",
+    "metodo": "Como calculamos",
+    "acerca": "Sobre",
+    "privacidad": "Privacidade",
+    "paraDormir": "Para dormir"
+  },
+
+  "video": {
+    "aviso": "Pode aparecer um anúncio antes do vídeo.",
+    "reproducir": "Reproduzir “{titulo}”",
+    "duracion": "{x} min",
+    "canal": "Canal: {canal}"
+  },
+
+  "tipos": {
+    "yoga-nidra": "Yoga nidra",
+    "meditacion": "Meditações",
+    "escaneo-corporal": "Escaneamentos corporais",
+    "ambiente": "Sons de ambiente"
+  },
+
+  "paraDormir": {
+    "metaTitulo": "Meditações e sons para dormir | cuánto dormir",
+    "metaDescripcion": "Meditações guiadas, escaneamentos corporais e sons de ambiente para dormir, escolhidos com carinho. Só carregam quando você toca neles.",
+    "titulo": "Para dormir",
+    "intro": "Meditações, escaneamentos corporais de cerca de 15 minutos e sons de ambiente que escolhemos com carinho. Cada vídeo só carrega quando você toca nele, pela versão do YouTube que não usa cookies.",
+    "vacio": "Estamos escolhendo com calma as primeiras meditações e sons. Volte em breve."
+  },
+
+  "error404": {
+    "metaTitulo": "Página não encontrada | cuánto dormir",
+    "titulo": "Esta página pegou no sono.",
+    "texto": "Talvez o link tenha mudado. A gente te acompanha de volta.",
+    "volver": "Voltar ao início"
+  },
+
+  "sinConexion": "Você está sem internet, mas a calculadora continua funcionando.",
+
+  "sugerencia": {
+    "texto": "Esta página também está em português",
+    "cambiar": "Mudar",
+    "cerrar": "Fechar"
+  },
+
+  "guia": {
+    "metaTitulo": "Guia do bom sono | cuánto dormir",
+    "metaDescripcion": "Artigos curtos e honestos sobre ciclos de sono, sonecas, cafeína e descanso, com as fontes científicas à vista.",
+    "titulo": "Guia do bom sono",
+    "intro": "Textos curtos para entender seu descanso, com as fontes à vista e sem promessas.",
+    "pronto": "Estamos preparando os primeiros artigos. Volte em breve.",
+    "soloEspanol": "Por enquanto, nossos artigos estão só em espanhol. As versões em português estão a caminho, assim que cada uma for revisada com calma.",
+    "enEspanol": "em espanhol",
+    "loEsencial": "O essencial",
+    "fuentes": "Fontes",
+    "enlacePendiente": "[LINK PENDENTE]",
+    "actualizado": "Atualizado em {fecha}",
+    "lectura": "{n} min de leitura",
+    "borrador": "Rascunho em revisão: a Clariónida ainda está revisando este texto.",
+    "autoria": "Escrito por Clariónida",
+    "autoriaTexto": "Um grupo de pessoas multipotenciais e curiosas por trás do cuánto dormir. Cada texto se baseia em pesquisas publicadas, e contamos de onde vem cada dado.",
+    "autoriaEnlace": "Conheça a Clariónida",
+    "prueba": "Experimente a calculadora",
+    "migas": "Trilha de navegação",
+    "otros": "Continue lendo"
+  },
+
+  "paginasMeta": {
+    "preguntas": {
+      "metaTitulo": "Perguntas frequentes sobre ciclos de sono | cuánto dormir",
+      "metaDescripcion": "Por que 90 minutos? E se eu acordar no meio de um ciclo? Respostas curtas e honestas sobre a calculadora e o sono.",
+      "titulo": "Perguntas frequentes"
+    }
+  },
+
+  "fechas": {
+    "locale": "pt-BR"
+  }
+}

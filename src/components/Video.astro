@@ -1,0 +1,38 @@
+---
+// Video de YouTube con fachada: primero una tarjeta con botón de reproducir.
+// El reproductor de youtube-nocookie.com solo carga cuando la persona lo toca.
+import type { Audio } from '../lib/audios';
+import { rellenar, type Idioma } from '../lib/hora';
+import { t } from '../i18n/rutas';
+
+interface Props {
+  audio: Audio;
+  idioma: Idioma;
+}
+const { audio, idioma } = Astro.props;
+const tx = t(idioma);
+---
+
+<div>
+  <div class="video-marco">
+    <button
+      type="button"
+      class="video-boton"
+      data-video={audio.youtubeId}
+      data-titulo={audio.titulo}
+      aria-label={rellenar(tx.video.reproducir, { titulo: audio.titulo })}
+    >
+      <span class="video-play" aria-hidden="true">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M6 4.5v11l9-5.5-9-5.5Z"></path></svg>
+      </span>
+      <span class="video-titulo">{audio.titulo}</span>
+      <span class="video-meta">
+        {rellenar(tx.video.duracion, { x: audio.duracionMin })} · {rellenar(tx.video.canal, { canal: audio.canal })}
+      </span>
+    </button>
+  </div>
+  <p class="video-aviso">{tx.video.aviso}</p>
+  <noscript>
+    <p><a href={`https://www.youtube.com/watch?v=${audio.youtubeId}`}>{audio.titulo}</a></p>
+  </noscript>
+</div>
