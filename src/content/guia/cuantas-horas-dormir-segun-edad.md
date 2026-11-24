@@ -4,7 +4,7 @@ descripcion: "Las personas adultas necesitan 7 horas o más por noche. Aquí tie
 publicado: 2026-11-24
 actualizado: 2026-11-24
 autora: "Clariónida"
-revisado: false
+revisado: true
 orden: 3
 calculadora: "despertar"
 esencial:
