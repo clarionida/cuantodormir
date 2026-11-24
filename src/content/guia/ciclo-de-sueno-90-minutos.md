@@ -4,7 +4,7 @@ descripcion: "Un ciclo de sueño es una vuelta por sus fases: ligero, profundo y
 publicado: 2026-11-24
 actualizado: 2026-11-24
 autora: "Clariónida"
-revisado: false
+revisado: true
 orden: 1
 calculadora: "despertar"
 esencial:
