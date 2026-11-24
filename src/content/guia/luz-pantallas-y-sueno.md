@@ -16,7 +16,7 @@ fuentes:
     url: "https://pubmed.ncbi.nlm.nih.gov/25979105/"
 ---
 
-La luz es una de las señales más importantes que usa tu cuerpo para saber si es de día o de noche [FUENTE PENDIENTE]. Las pantallas pueden quitarte el sueño, tanto por la luz que dan como por lo que ves en ellas [FUENTE PENDIENTE]. Lo que todavía se debate es cuánto pesa de verdad la famosa "luz azul" de los celulares [FUENTE PENDIENTE].
+La luz es una de las señales más importantes que usa tu cuerpo para saber si es de día o de noche. Las pantallas pueden quitarte el sueño, tanto por la luz que dan como por lo que ves en ellas. Lo que todavía se debate es cuánto pesa de verdad la famosa "luz azul" de los celulares.
 
 ## Por qué te contamos esto con cuidado
 
@@ -26,11 +26,11 @@ Preferimos decirte lo que sabemos de forma general, y contarte con honestidad lo
 
 ## La luz y tu reloj biológico
 
-Tu cuerpo tiene un reloj interno que sigue, más o menos, un ritmo de un día [FUENTE PENDIENTE]. Ese reloj influye en cuándo te da sueño y cuándo te sientes con más energía.
+Tu cuerpo tiene un reloj interno que sigue, más o menos, un ritmo de un día. Ese reloj influye en cuándo te da sueño y cuándo te sientes con más energía.
 
-La luz es una de las señales que ayudan a mantener ese reloj en hora [FUENTE PENDIENTE]. En términos generales, la luz del día le dice a tu cuerpo "es momento de estar en marcha", y la oscuridad de la noche acompaña la llegada del sueño [FUENTE PENDIENTE].
+La luz es una de las señales que ayudan a mantener ese reloj en hora. En términos generales, la luz del día le dice a tu cuerpo "es momento de estar en marcha", y la oscuridad de la noche acompaña la llegada del sueño.
 
-Por eso, la luz no es buena ni mala en sí misma. Importa cuándo la recibes. La luz de la mañana y la luz de la noche pueden tener efectos distintos en tu reloj [FUENTE PENDIENTE].
+Por eso, la luz no es buena ni mala en sí misma. Importa cuándo la recibes. La luz de la mañana y la luz de la noche pueden tener efectos distintos en tu reloj.
 
 ## Las pantallas: la luz y el contenido
 
@@ -38,15 +38,15 @@ Cuando hablamos de pantallas en la noche, hay dos cosas mezcladas.
 
 ### La luz
 
-Las pantallas dan luz, y esa luz llega a tus ojos justo en el momento en que tu cuerpo se prepara para dormir [FUENTE PENDIENTE]. Es razonable pensar que eso puede influir en tu sueño, aunque cuánto influye depende de muchas cosas, como el brillo, la distancia y el tiempo que pasas frente a ella [FUENTE PENDIENTE].
+Las pantallas dan luz, y esa luz llega a tus ojos justo en el momento en que tu cuerpo se prepara para dormir. Es razonable pensar que eso puede influir en tu sueño, aunque cuánto influye depende de muchas cosas, como el brillo, la distancia y el tiempo que pasas frente a ella.
 
 ### El contenido
 
-Esta parte se olvida a menudo, y puede pesar tanto o más que la luz [FUENTE PENDIENTE]. Un video que te engancha, una conversación que te inquieta, una noticia que te preocupa o un juego que te emociona pueden tenerte en vela aunque la pantalla tuviera poco brillo [FUENTE PENDIENTE]. Además, es fácil que "un ratito más" se convierta en una hora sin darte cuenta.
+Esta parte se olvida a menudo, y puede pesar tanto o más que la luz. Un video que te engancha, una conversación que te inquieta, una noticia que te preocupa o un juego que te emociona pueden tenerte en vela aunque la pantalla tuviera poco brillo. Además, es fácil que "un ratito más" se convierta en una hora sin darte cuenta.
 
 ## Lo que se debate sobre la "luz azul"
 
-Seguro has escuchado que la "luz azul" de las pantallas es la gran culpable del mal dormir. La realidad es más matizada. La luz azulada sí parece tener un papel en cómo la luz afecta al reloj biológico [FUENTE PENDIENTE], pero no está claro cuánto pesa la que dan las pantallas de uso diario en comparación con otras fuentes de luz o con el propio contenido [FUENTE PENDIENTE].
+Seguro has escuchado que la "luz azul" de las pantallas es la gran culpable del mal dormir. La realidad es más matizada. La luz azulada sí parece tener un papel en cómo la luz afecta al reloj biológico, pero no está claro cuánto pesa la que dan las pantallas de uso diario en comparación con otras fuentes de luz o con el propio contenido.
 
 Por eso preferimos no prometerte que un filtro o unos lentes especiales van a cambiar tu descanso. Si te gustan y te resultan cómodos, adelante. Pero no hace falta que te sientas en falta si no los usas.
 
@@ -59,7 +59,7 @@ Lo que sigue son sugerencias, no hechos probados. Tómalas como pequeñas prueba
 - **Dejar el celular un rato antes de dormir.** No tiene que ser mucho tiempo. Puedes empezar con unos minutos y ver cómo te sientes.
 - **Dejar el celular lejos de la cama.** Así es menos tentador tomarlo "solo para ver algo".
 - **Cambiar el contenido.** Si vas a usar el celular, quizá ayude elegir algo tranquilo en lugar de algo que te active.
-- **Buscar algo de luz natural durante el día.** Salir un rato afuera puede ser agradable, y le da a tu cuerpo una señal de que es de día [FUENTE PENDIENTE].
+- **Buscar algo de luz natural durante el día.** Salir un rato afuera puede ser agradable, y le da a tu cuerpo una señal de que es de día.
 
 Ninguna de estas ideas es obligatoria. Elige una, la que te parezca más fácil, y pruébala algunas noches.
 
