@@ -35,13 +35,13 @@ export const sitio = {
   // 'https://www.instagram.com/clarionida/'). Las que queden vacías '' no
   // aparecen en el sitio. Se muestran en este orden.
   redes: {
-    instagram: '',
-    tiktok: '',
-    youtube: '',
-    x: '',
+    instagram: 'https://www.instagram.com/clarionida/',
+    tiktok: 'https://www.tiktok.com/@clarionida?lang=es',
+    youtube: 'https://www.youtube.com/@clarionida',
+    x: 'https://x.com/clarionida',
     threads: '',
     bluesky: '',
-    facebook: '',
+    facebook: 'https://www.facebook.com/clarionida',
     pinterest: '',
     spotify: '',
   },
