@@ -34,31 +34,31 @@ Estas son algunas señales generales. No son una lista para diagnosticarte, sino
 
 ### Te cuesta dormirte o seguir durmiendo, de forma habitual
 
-Si la mayoría de las noches tardas mucho en dormirte, te despiertas varias veces o te despiertas muy temprano sin poder volver a dormir, y eso dura ya un tiempo, puede ser una buena razón para consultarlo [FUENTE PENDIENTE]. Si te interesa saber qué es lo habitual al dormirse, lo platicamos en [cuánto tardas en dormirte](/guia/cuanto-tardas-en-dormirte/).
+Si la mayoría de las noches tardas mucho en dormirte, te despiertas varias veces o te despiertas muy temprano sin poder volver a dormir, y eso dura ya un tiempo, puede ser una buena razón para consultarlo. Si te interesa saber qué es lo habitual al dormirse, lo platicamos en [cuánto tardas en dormirte](/guia/cuanto-tardas-en-dormirte/).
 
 ### El cansancio del día afecta tu vida
 
-Si te sientes con tan poca energía que te cuesta trabajar, estudiar, convivir o hacer lo que te gusta, vale la pena contarlo en consulta [FUENTE PENDIENTE]. A veces el cansancio tiene que ver con el sueño y a veces con otras cosas. Un profesional puede ayudarte a distinguirlo.
+Si te sientes con tan poca energía que te cuesta trabajar, estudiar, convivir o hacer lo que te gusta, vale la pena contarlo en consulta. A veces el cansancio tiene que ver con el sueño y a veces con otras cosas. Un profesional puede ayudarte a distinguirlo.
 
 ### Ronquidos fuertes o pausas al respirar
 
-Si alguien que duerme cerca de ti nota que roncas muy fuerte, o que parece que dejas de respirar por momentos mientras duermes, es una señal que conviene comentar con un profesional de la salud [FUENTE PENDIENTE]. Tú no puedes verte mientras duermes, así que lo que otra persona observa puede ser muy útil. Puedes pedirle que te cuente con detalle lo que vio.
+Si alguien que duerme cerca de ti nota que roncas muy fuerte, o que parece que dejas de respirar por momentos mientras duermes, es una señal que conviene comentar con un profesional de la salud. Tú no puedes verte mientras duermes, así que lo que otra persona observa puede ser muy útil. Puedes pedirle que te cuente con detalle lo que vio.
 
 ### Piernas inquietas
 
-Si al estar en reposo, sobre todo en la noche, sientes molestias en las piernas y unas ganas difíciles de controlar de moverlas, y eso te dificulta dormir, también es algo que puedes platicar en consulta [FUENTE PENDIENTE].
+Si al estar en reposo, sobre todo en la noche, sientes molestias en las piernas y unas ganas difíciles de controlar de moverlas, y eso te dificulta dormir, también es algo que puedes platicar en consulta.
 
 ### Mucho sueño al manejar
 
-Si notas que te da mucho sueño cuando manejas, o que te cuesta mantener la atención en el camino, es una señal que vale la pena consultar pronto [FUENTE PENDIENTE]. Mientras tanto, cuídate y date permiso de no manejar cuando sientas mucho sueño.
+Si notas que te da mucho sueño cuando manejas, o que te cuesta mantener la atención en el camino, es una señal que vale la pena consultar pronto. Mientras tanto, cuídate y date permiso de no manejar cuando sientas mucho sueño.
 
 ## Cuando el insomnio se vuelve crónico
 
-Cuando el insomnio se vuelve crónico, hay tratamientos con buen respaldo. La guía de la Academia Americana de Medicina del Sueño (AASM) para el insomnio crónico en personas adultas recomienda con fuerza la terapia cognitivo-conductual para el insomnio, conocida como TCC-I, en su versión de varios componentes (Edinger y otros, 2021 [ENLACE PENDIENTE]).
+Cuando el insomnio se vuelve crónico, hay tratamientos con buen respaldo. La guía de la Academia Americana de Medicina del Sueño (AASM) para el insomnio crónico en personas adultas recomienda con fuerza la terapia cognitivo-conductual para el insomnio, conocida como TCC-I, en su versión de varios componentes (Edinger y otros, 2021).
 
-La misma guía también sugiere, como recomendación condicional, otras terapias: el control de estímulos, la restricción del tiempo en cama y la relajación (Edinger y otros, 2021 [ENLACE PENDIENTE]). Estas terapias se hacen con profesionales, que las adaptan a cada persona.
+La misma guía también sugiere, como recomendación condicional, otras terapias: el control de estímulos, la restricción del tiempo en cama y la relajación (Edinger y otros, 2021). Estas terapias se hacen con profesionales, que las adaptan a cada persona.
 
-Y hay un punto que quita mucha culpa: la guía sugiere no usar la higiene del sueño como única terapia para el insomnio crónico (Edinger y otros, 2021 [ENLACE PENDIENTE]). Es decir, si ya probaste a cuidar tus hábitos y no ha sido suficiente, no es que lo hayas hecho mal. Una revisión de 2015 llega a una idea parecida: los hábitos de sueño son un buen punto de partida, pero por sí solos no bastan para tratar el insomnio (Irish y otros, 2015 [ENLACE PENDIENTE]).
+Y hay un punto que quita mucha culpa: la guía sugiere no usar la higiene del sueño como única terapia para el insomnio crónico (Edinger y otros, 2021). Es decir, si ya probaste a cuidar tus hábitos y no ha sido suficiente, no es que lo hayas hecho mal. Una revisión de 2015 llega a una idea parecida: los hábitos de sueño son un buen punto de partida, pero por sí solos no bastan para tratar el insomnio (Irish y otros, 2015).
 
 Si quieres ver qué hábitos se suelen recomendar y qué tan respaldado está cada uno, lo contamos en [hábitos para dormir mejor](/guia/habitos-para-dormir-mejor/).
 
