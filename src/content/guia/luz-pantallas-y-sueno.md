@@ -4,7 +4,7 @@ descripcion: "La luz le habla a tu reloj biológico y las pantallas pueden quita
 publicado: 2026-11-24
 actualizado: 2026-11-24
 autora: "Clariónida"
-revisado: false
+revisado: true
 orden: 9
 calculadora: "ahora"
 esencial:
