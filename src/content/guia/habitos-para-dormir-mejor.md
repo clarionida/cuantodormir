@@ -4,7 +4,7 @@ descripcion: "Horarios regulares, cafeína lejos de la noche y un cuarto tranqui
 publicado: 2026-11-24
 actualizado: 2026-11-24
 autora: "Clariónida"
-revisado: false
+revisado: true
 orden: 7
 calculadora: "acostarse"
 esencial:
