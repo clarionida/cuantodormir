@@ -1,0 +1,57 @@
+---
+// Encabezado: logo con nombre, lema y selector de idioma (ES · EN · PT).
+import Simbolo from './Simbolo.astro';
+import { IDIOMAS, ruta, t, type Alternativas } from '../i18n/rutas';
+import type { Idioma } from '../lib/hora';
+
+interface Props {
+  idioma: Idioma;
+  alternativas: Alternativas;
+  conLema?: boolean;
+}
+const { idioma, alternativas, conLema = true } = Astro.props;
+const tx = t(idioma);
+const inicio = ruta('despertar', idioma);
+
+// Si una página no existe en otro idioma (por ejemplo, un artículo que aún
+// no se traduce), el selector lleva al índice de la guía de ese idioma.
+const opciones = IDIOMAS.map((i) => ({
+  idioma: i,
+  href: alternativas[i] ?? ruta('guia', i),
+  corto: t(i).corto,
+  nombre: t(i).nombre,
+  lang: t(i).htmlLang,
+}));
+---
+
+<header class="encabezado contenedor">
+  <div class="encabezado-fila">
+    <div>
+      <a class="marca" href={inicio} aria-label={tx.irAlInicio}>
+        <Simbolo />
+        <span class="marca-nombre">cuánto dormir</span>
+      </a>
+      {conLema && <p class="lema">{tx.lema}</p>}
+    </div>
+    <nav class="idiomas" aria-label={tx.navIdioma}>
+      <ul>
+        {
+          opciones.map((o) => (
+            <li>
+              <a
+                href={o.href}
+                hreflang={o.lang}
+                lang={o.lang}
+                data-idioma={o.idioma}
+                aria-current={o.idioma === idioma ? 'true' : undefined}
+              >
+                <span aria-hidden="true">{o.corto}</span>
+                <span class="sr-only">{o.nombre}</span>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+  </div>
+</header>

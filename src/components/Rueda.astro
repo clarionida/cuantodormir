@@ -1,0 +1,73 @@
+---
+// Rueda deslizable tipo alarma de celular. Cada columna es un "spinbutton"
+// accesible: se maneja con el dedo, la rueda del ratón, arrastrando y con el
+// teclado (flechas, Re Pág/Av Pág, Inicio/Fin). La lógica está en
+// src/scripts/rueda.ts.
+
+export interface ColumnaRueda {
+  clave: string;
+  etiqueta: string;
+  valores: { valor: number; texto: string }[];
+  inicial: number;
+  ancha?: boolean;
+  /** Paso de Re Pág/Av Pág, en elementos. */
+  salto?: number;
+  /** Valor completo para lectores de pantalla (por ejemplo "8:00 a. m."). */
+  textoInicial?: string;
+}
+
+interface Props {
+  id: string;
+  /** "hora" o "latencia": así la encuentra src/scripts/calculadora.ts. */
+  tipo: 'hora' | 'latencia';
+  etiquetadaPor: string;
+  columnas: ColumnaRueda[];
+  /** Texto entre columnas (por ejemplo ":"); null para nada. */
+  separadores?: (string | null)[];
+  /** Texto fijo después de la última columna (por ejemplo "min"). */
+  unidad?: string;
+}
+
+const { id, tipo, etiquetadaPor, columnas, separadores = [], unidad } = Astro.props;
+---
+
+<div class="rueda" id={id} role="group" aria-labelledby={etiquetadaPor} data-rueda={tipo}>
+  {
+    columnas.map((c, i) => {
+      const indice = Math.max(0, c.valores.findIndex((v) => v.valor === c.inicial));
+      const minimo = c.valores[0].valor;
+      const maximo = c.valores[c.valores.length - 1].valor;
+      return (
+        <>
+          {i > 0 && separadores[i - 1] && (
+            <span class="rueda-sep" aria-hidden="true">
+              {separadores[i - 1]}
+            </span>
+          )}
+          <div
+            class:list={['rueda-col', { 'rueda-col--ancha': c.ancha }]}
+            role="spinbutton"
+            tabindex="0"
+            aria-label={c.etiqueta}
+            aria-valuemin={minimo}
+            aria-valuemax={maximo}
+            aria-valuenow={c.valores[indice].valor}
+            aria-valuetext={c.textoInicial ?? c.valores[indice].texto}
+            data-col={c.clave}
+            data-salto={c.salto ?? 3}
+            data-inicial={indice}
+          >
+            <ul class="rueda-lista" aria-hidden="true">
+              {c.valores.map((v, j) => (
+                <li data-valor={v.valor} class:list={{ elegido: j === indice }}>
+                  {v.texto}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </>
+      );
+    })
+  }
+  {unidad && <span class="rueda-unidad" aria-hidden="true">{unidad}</span>}
+</div>

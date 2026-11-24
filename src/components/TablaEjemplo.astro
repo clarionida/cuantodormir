@@ -1,0 +1,91 @@
+---
+// Tabla de ejemplo ya calculada en el HTML: se lee sin JavaScript, y sirve a
+// buscadores y a IAs que no ejecutan código. Usa el mismo núcleo de cálculo
+// que la calculadora, con 15 minutos de latencia y ciclos de 90 minutos.
+import { horasDeSiesta, horasParaAcostarse, horasParaDespertar } from '../lib/calculo';
+import { formatearDuracion, formatearHora, rellenar, type Idioma } from '../lib/hora';
+import { sitio } from '../config/sitio';
+import { t, type Calculadora } from '../i18n/rutas';
+
+interface Props {
+  idioma: Idioma;
+  pestana: Calculadora;
+}
+const { idioma, pestana } = Astro.props;
+const tx = t(idioma).ejemplos;
+const { cicloMin, latenciaPorDefecto: latencia, siestasMin } = sitio.calculadora;
+const ajustes = { cicloMin, latenciaMin: latencia, ciclosMaximos: 6, ciclosRecomendados: 5 };
+
+// Fecha fija de referencia (sin cambios de horario) para que la tabla sea estable.
+const dia = (h: number, m = 0) => new Date(2026, 0, 15, h, m);
+const hora = (d: Date) => formatearHora(d, idioma);
+const columnaCiclos = (n: number) =>
+  rellenar(tx.ciclosColumna, { n, duracion: formatearDuracion(n * cicloMin, idioma) });
+
+let caption = '';
+let columnaFila = '';
+let columnas: string[] = [];
+let filas: { cabecera: string; celdas: string[] }[] = [];
+
+if (pestana === 'despertar') {
+  caption = tx.despertarCaption;
+  columnaFila = tx.despertarColumna;
+  const ciclos = [6, 5, 4];
+  columnas = ciclos.map(columnaCiclos);
+  filas = [6, 7, 8].map((h) => {
+    const despertar = dia(h);
+    const opciones = horasParaAcostarse(despertar, ajustes, dia(0, 0));
+    return {
+      cabecera: hora(despertar),
+      celdas: ciclos.map((n) => hora(opciones.find((o) => o.ciclos === n)!.fecha)),
+    };
+  });
+} else if (pestana === 'siesta') {
+  caption = tx.siestaCaption;
+  columnaFila = tx.siestaColumna;
+  columnas = siestasMin.map((x) => rellenar(tx.siestaMinColumna, { x }));
+  filas = [13, 14, 15, 16].map((h) => ({
+    cabecera: hora(dia(h)),
+    celdas: horasDeSiesta(dia(h), latencia, siestasMin).map((o) => hora(o.fecha)),
+  }));
+} else {
+  caption = tx.inicioCaption;
+  columnaFila = tx.inicioColumna;
+  const ciclos = [4, 5, 6];
+  columnas = ciclos.map(columnaCiclos);
+  filas = [21, 22, 23, 24].map((h) => {
+    const inicio = dia(h);
+    const opciones = horasParaDespertar(inicio, ajustes);
+    return {
+      cabecera: hora(inicio),
+      celdas: ciclos.map((n) => hora(opciones.find((o) => o.ciclos === n)!.fecha)),
+    };
+  });
+}
+---
+
+<h2>{tx.titulo}</h2>
+<div class="tabla-envoltura">
+  <table>
+    <caption>{caption}</caption>
+    <thead>
+      <tr>
+        <th scope="col">{columnaFila}</th>
+        {columnas.map((c) => <th scope="col">{c}</th>)}
+      </tr>
+    </thead>
+    <tbody>
+      {
+        filas.map((f) => (
+          <tr>
+            <th scope="row">{f.cabecera}</th>
+            {f.celdas.map((c) => (
+              <td>{c}</td>
+            ))}
+          </tr>
+        ))
+      }
+    </tbody>
+  </table>
+</div>
+<p class="tabla-nota">{tx.notaLatencia}</p>

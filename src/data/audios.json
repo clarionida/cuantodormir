@@ -1,0 +1,18 @@
+[
+  {
+    "titulo": "[PENDIENTE: título del yoga nidra de unos 10 minutos]",
+    "youtubeId": "[PENDIENTE]",
+    "duracionMin": 10,
+    "tipo": "yoga-nidra",
+    "canal": "[PENDIENTE: nombre del canal]",
+    "idioma": "es"
+  },
+  {
+    "titulo": "[PENDIENTE: título de una meditación para dormir de unos 15 minutos]",
+    "youtubeId": "[PENDIENTE]",
+    "duracionMin": 15,
+    "tipo": "meditacion",
+    "canal": "[PENDIENTE: nombre del canal]",
+    "idioma": "es"
+  }
+]

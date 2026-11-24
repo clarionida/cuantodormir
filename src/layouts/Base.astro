@@ -1,0 +1,161 @@
+---
+// Plantilla común de todas las páginas: <head> (SEO, idiomas, íconos,
+// fuentes), encabezado, contenido y pie de página.
+import '../styles/global.css';
+import interUrl from '@fontsource-variable/inter/files/inter-latin-wght-normal.woff2?url';
+import newsreaderUrl from '@fontsource-variable/newsreader/files/newsreader-latin-wght-normal.woff2?url';
+import Encabezado from '../components/Encabezado.astro';
+import Pie from '../components/Pie.astro';
+import { sitio } from '../config/sitio';
+import { IDIOMAS, t, type Alternativas } from '../i18n/rutas';
+import type { Idioma } from '../lib/hora';
+import { esquemaOrganizacion, esquemaSitioWeb } from '../lib/esquemas';
+
+interface Props {
+  idioma: Idioma;
+  titulo: string;
+  descripcion: string;
+  /** Versiones de esta página en cada idioma (para hreflang y el selector). */
+  alternativas: Alternativas;
+  /** Si es true, la página lleva noindex (borradores, 404…). */
+  noindex?: boolean;
+  /** Datos estructurados adicionales (JSON-LD). */
+  esquemas?: Record<string, unknown>[];
+  ogTipo?: 'website' | 'article';
+  /** Muestra el lema bajo el logo. */
+  conLema?: boolean;
+  /** Fechas para artículos (Open Graph). */
+  publicado?: Date;
+  actualizado?: Date;
+}
+
+const {
+  idioma,
+  titulo,
+  descripcion,
+  alternativas,
+  noindex = false,
+  esquemas = [],
+  ogTipo = 'website',
+  conLema = true,
+  publicado,
+  actualizado,
+} = Astro.props;
+
+const tx = t(idioma);
+const dominio = sitio.dominio;
+const rutaActual = Astro.url.pathname.endsWith('/') ? Astro.url.pathname : `${Astro.url.pathname}/`;
+const canonica = new URL(alternativas[idioma] ?? rutaActual, dominio).href;
+const hreflangs = IDIOMAS.filter((i) => alternativas[i]).map((i) => ({
+  hreflang: t(i).hreflang,
+  href: new URL(alternativas[i]!, dominio).href,
+}));
+const xDefault = alternativas.es ? new URL(alternativas.es, dominio).href : undefined;
+const ogImagen = new URL('/og-image.png', dominio).href;
+
+const jsonLd = [esquemaOrganizacion(), esquemaSitioWeb(), ...esquemas];
+
+// Fuentes alojadas en el propio sitio. "Fallback" ajusta las métricas de la
+// fuente del sistema para que el texto no salte cuando llega la fuente real.
+const cssFuentes = `
+@font-face{font-family:'Inter';font-style:normal;font-display:swap;font-weight:100 900;src:url(${interUrl}) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Newsreader';font-style:normal;font-display:swap;font-weight:200 800;src:url(${newsreaderUrl}) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Inter Fallback';src:local('Arial'),local('Helvetica'),local('Roboto');size-adjust:107.1%;ascent-override:90.4%;descent-override:22.5%;line-gap-override:0%}
+@font-face{font-family:'Newsreader Fallback';src:local('Times New Roman'),local('Times'),local('Noto Serif');size-adjust:101%;ascent-override:72.8%;descent-override:26.2%;line-gap-override:0%}
+`;
+
+const { analitica, verificacion } = sitio;
+---
+
+<!doctype html>
+<html lang={tx.htmlLang} dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content={sitio.colores.fondo} />
+    <style is:inline>html,body{background:#0E1530;color:#E7E2D6}</style>
+    <title>{titulo}</title>
+    <meta name="description" content={descripcion} />
+    <link rel="canonical" href={canonica} />
+    {noindex && <meta name="robots" content="noindex, follow" />}
+    {hreflangs.map((h) => <link rel="alternate" hreflang={h.hreflang} href={h.href} />)}
+    {hreflangs.length > 0 && xDefault && <link rel="alternate" hreflang="x-default" href={xDefault} />}
+
+    <link rel="preload" href={interUrl} as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href={newsreaderUrl} as="font" type="font/woff2" crossorigin />
+    <style is:inline set:html={cssFuentes} />
+
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href={idioma === 'es' ? '/manifest.webmanifest' : `/${idioma}/manifest.webmanifest`} />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+
+    <meta property="og:site_name" content={sitio.marca} />
+    <meta property="og:type" content={ogTipo} />
+    <meta property="og:title" content={titulo} />
+    <meta property="og:description" content={descripcion} />
+    <meta property="og:url" content={canonica} />
+    <meta property="og:locale" content={tx.ogLocale} />
+    {IDIOMAS.filter((i) => i !== idioma && alternativas[i]).map((i) => <meta property="og:locale:alternate" content={t(i).ogLocale} />)}
+    <meta property="og:image" content={ogImagen} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={`${sitio.marca}: ${t('es').lema}`} />
+    {publicado && <meta property="article:published_time" content={publicado.toISOString()} />}
+    {actualizado && <meta property="article:modified_time" content={actualizado.toISOString()} />}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={titulo} />
+    <meta name="twitter:description" content={descripcion} />
+    <meta name="twitter:image" content={ogImagen} />
+
+    {verificacion.google && <meta name="google-site-verification" content={verificacion.google} />}
+    {verificacion.bing && <meta name="msvalidate.01" content={verificacion.bing} />}
+
+    {jsonLd.map((e) => <script type="application/ld+json" set:html={JSON.stringify(e)} />)}
+
+    {
+      analitica.proveedor === 'cloudflare' && analitica.cloudflareToken && (
+        <script
+          is:inline
+          defer
+          src="https://static.cloudflareinsights.com/beacon.min.js"
+          data-cf-beacon={JSON.stringify({ token: analitica.cloudflareToken })}
+        />
+      )
+    }
+    {
+      analitica.proveedor === 'goatcounter' && analitica.goatcounterCodigo && (
+        <script
+          is:inline
+          async
+          data-goatcounter={`https://${analitica.goatcounterCodigo}.goatcounter.com/count`}
+          src="//gc.zgo.at/count.js"
+        />
+      )
+    }
+  </head>
+  <body data-idioma={idioma}>
+    <a class="saltar" href="#contenido">{tx.saltar}</a>
+
+    <div class="aviso-barra" data-sugerencia hidden>
+      <span data-sugerencia-texto></span>
+      <a data-sugerencia-enlace href="/"></a>
+      <button type="button" class="cerrar" data-sugerencia-cerrar aria-label="×">×</button>
+    </div>
+    <div class="aviso-barra" data-sin-conexion role="status" hidden>{tx.sinConexion}</div>
+
+    <Encabezado idioma={idioma} alternativas={alternativas} conLema={conLema} />
+
+    <main id="contenido" tabindex="-1">
+      <slot />
+    </main>
+
+    <Pie idioma={idioma} />
+
+    <script>
+      import '../scripts/app';
+    </script>
+  </body>
+</html>

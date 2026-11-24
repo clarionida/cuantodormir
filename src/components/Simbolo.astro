@@ -1,0 +1,21 @@
+---
+// Símbolo de la marca (luna creciente que casi cierra un círculo + estrella).
+import { SIMBOLO } from '../marca/simbolo.mjs';
+
+interface Props {
+  class?: string;
+}
+const { class: clase } = Astro.props;
+const { viewBox, luna, grosor, estrella } = SIMBOLO;
+---
+
+<svg class={clase} viewBox={viewBox} aria-hidden="true" focusable="false">
+  <path
+    d={luna}
+    fill="none"
+    stroke="currentColor"
+    stroke-width={grosor}
+    stroke-linecap="round"
+    stroke-linejoin="round"></path>
+  <circle cx={estrella.cx} cy={estrella.cy} r={estrella.r} fill="currentColor"></circle>
+</svg>
