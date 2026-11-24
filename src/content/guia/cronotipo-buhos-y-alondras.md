@@ -4,7 +4,7 @@ descripcion: "El cronotipo es tu preferencia natural por horarios más tempranos
 publicado: 2026-11-24
 actualizado: 2026-11-24
 autora: "Clariónida"
-revisado: false
+revisado: true
 orden: 10
 calculadora: "despertar"
 esencial:
