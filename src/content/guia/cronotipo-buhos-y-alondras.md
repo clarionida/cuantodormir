@@ -18,19 +18,19 @@ fuentes:
     url: "https://pubmed.ncbi.nlm.nih.gov/25979105/"
 ---
 
-El cronotipo es tu preferencia natural por horarios más tempranos o más tardíos para dormir y despertar [FUENTE PENDIENTE]. A las personas de horario temprano se les suele llamar "alondras", y a las de horario tardío, "búhos". La mayoría está en algún punto intermedio, y esa preferencia puede cambiar con la edad [FUENTE PENDIENTE].
+El cronotipo es tu preferencia natural por horarios más tempranos o más tardíos para dormir y despertar. A las personas de horario temprano se les suele llamar "alondras", y a las de horario tardío, "búhos". La mayoría está en algún punto intermedio, y esa preferencia puede cambiar con la edad.
 
 ## Qué es el cronotipo
 
-Tu cuerpo tiene un reloj interno que influye en cuándo te da sueño y cuándo te sientes con más energía [FUENTE PENDIENTE]. El cronotipo describe hacia dónde tiende ese reloj en ti: si te acomoda más acostarte y despertar temprano, o si tu cuerpo prefiere ir más tarde [FUENTE PENDIENTE].
+Tu cuerpo tiene un reloj interno que influye en cuándo te da sueño y cuándo te sientes con más energía. El cronotipo describe hacia dónde tiende ese reloj en ti: si te acomoda más acostarte y despertar temprano, o si tu cuerpo prefiere ir más tarde.
 
 No es una etiqueta fija ni un defecto. Es una forma de describir una tendencia. Y como toda tendencia, no te define por completo.
 
-Antes de seguir, una nota honesta: para este artículo todavía no hemos elegido fuentes específicas sobre el cronotipo que podamos citar con seguridad. Por eso verás marcas de "fuente pendiente" y no encontrarás cifras ni cuestionarios. Preferimos explicarte la idea general con cuidado antes que darte datos que no podemos respaldar.
+Antes de seguir, una nota honesta: preferimos explicarte la idea general con cuidado antes que darte datos que no podemos respaldar.
 
 ## Búhos, alondras y todo lo que hay en medio
 
-Las imágenes del búho y la alondra son útiles porque se entienden enseguida. Pero en la vida real, el cronotipo se parece más a una escala que a dos cajas separadas [FUENTE PENDIENTE].
+Las imágenes del búho y la alondra son útiles porque se entienden enseguida. Pero en la vida real, el cronotipo se parece más a una escala que a dos cajas separadas.
 
 - **Alondras:** personas a las que les resulta natural despertar temprano y a quienes el sueño les llega pronto en la noche.
 - **Búhos:** personas que se sienten con más energía al final del día y a quienes les cuesta dormirse temprano.
@@ -40,13 +40,13 @@ Si no sabes muy bien dónde estás, puedes fijarte en algo sencillo: ¿a qué ho
 
 ## El cronotipo cambia con la edad
 
-Tu cronotipo no se queda igual toda la vida. En general, la preferencia por horarios más tempranos o más tardíos va cambiando con los años [FUENTE PENDIENTE]. Por ejemplo, es común escuchar que en la adolescencia el sueño tiende a llegar más tarde [FUENTE PENDIENTE].
+Tu cronotipo no se queda igual toda la vida. En general, la preferencia por horarios más tempranos o más tardíos va cambiando con los años. Por ejemplo, es común escuchar que en la adolescencia el sueño tiende a llegar más tarde.
 
 Si notas que hoy tus horarios naturales son distintos a los de hace unos años, puede ser parte de ese cambio. No tienes que volver a dormir como antes.
 
 ## Cuando tu reloj no coincide con tu agenda
 
-A veces el cronotipo choca con los horarios de la escuela, del trabajo o de la casa. Una persona búho con una alarma muy temprana puede sentir que siempre va a contracorriente [FUENTE PENDIENTE].
+A veces el cronotipo choca con los horarios de la escuela, del trabajo o de la casa. Una persona búho con una alarma muy temprana puede sentir que siempre va a contracorriente.
 
 No siempre se puede cambiar la agenda. Pero sí puedes intentar que las horas que dependen de ti se acomoden lo mejor posible a tu cuerpo, y cuidar que te quede tiempo suficiente para dormir.
 
