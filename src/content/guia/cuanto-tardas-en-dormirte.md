@@ -18,7 +18,7 @@ fuentes:
     url: ""
 ---
 
-Lo más común es tardar unos minutos en dormirte: la mayoría de las personas tarda entre 10 y 20 minutos [FUENTE PENDIENTE]. Ese tiempo cambia de una noche a otra, y no pasa nada si hoy fue más rápido o más lento que ayer. Lo que conviene mirar es si tardar mucho se vuelve una costumbre.
+Lo más común es tardar unos minutos en dormirte: la mayoría de las personas tarda entre 10 y 20 minutos. Ese tiempo cambia de una noche a otra, y no pasa nada si hoy fue más rápido o más lento que ayer. Lo que conviene mirar es si tardar mucho se vuelve una costumbre.
 
 ## Un nombre para ese rato
 
@@ -30,15 +30,15 @@ No es un número fijo. Puede cambiar según cómo fue tu día, cuánto sueño tr
 
 En la calculadora usamos una referencia sencilla, que todavía no tiene una fuente asignada:
 
-- La mayoría de las personas tarda entre 10 y 20 minutos en dormirse [FUENTE PENDIENTE].
-- Dormirse en menos de 5 minutos puede ser señal de mucho cansancio [FUENTE PENDIENTE].
-- Tardar más de 30 minutos de forma habitual puede indicar dificultad para conciliar el sueño [FUENTE PENDIENTE].
+- La mayoría de las personas tarda entre 10 y 20 minutos en dormirse.
+- Dormirse en menos de 5 minutos puede ser señal de mucho cansancio.
+- Tardar más de 30 minutos de forma habitual puede indicar dificultad para conciliar el sueño.
 
 Fíjate en la palabra «habitual». Una noche difícil la tiene cualquiera. Lo que cuenta es lo que se repite, noche tras noche.
 
 ## Con la edad, suele tardar un poco más
 
-El sueño cambia a lo largo de la vida. En personas adultas sanas, con los años el tiempo para dormirse tiende a aumentar un poco, igual que los despertares durante la noche (Ohayon y otros, 2004 [ENLACE PENDIENTE]).
+El sueño cambia a lo largo de la vida. En personas adultas sanas, con los años el tiempo para dormirse tiende a aumentar un poco, igual que los despertares durante la noche (Ohayon y otros, 2004).
 
 Si notas que hoy te cuesta un poco más que hace algunos años, puede ser parte de ese cambio general. Aun así, si te preocupa, siempre puedes platicarlo con un profesional de la salud.
 
