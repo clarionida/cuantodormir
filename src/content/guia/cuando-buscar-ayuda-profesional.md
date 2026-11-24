@@ -4,7 +4,7 @@ descripcion: "Algunas señales indican que vale la pena platicar tu sueño con u
 publicado: 2026-11-24
 actualizado: 2026-11-24
 autora: "Clariónida"
-revisado: false
+revisado: true
 orden: 11
 calculadora: "despertar"
 esencial:
