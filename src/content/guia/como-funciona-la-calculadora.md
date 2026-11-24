@@ -4,7 +4,7 @@ descripcion: "La calculadora suma ciclos de 90 minutos y 15 minutos para dormirt
 publicado: 2026-11-24
 actualizado: 2026-11-24
 autora: "Clariónida"
-revisado: false
+revisado: true
 orden: 2
 calculadora: "despertar"
 esencial:
