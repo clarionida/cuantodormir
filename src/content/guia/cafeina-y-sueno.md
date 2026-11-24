@@ -42,11 +42,11 @@ El tercer punto es el que más sorprende. Puedes sentir que dormiste bien y, aun
 
 Vale la pena leer estos resultados con cuidado, sin sacar más conclusiones de las que permiten.
 
-El estudio usó una dosis alta. No nos dice qué pasa con cantidades menores, ni a cuántas tazas de café equivalen esos 400 mg. La cantidad de cafeína cambia mucho según la bebida y cómo se prepara [FUENTE PENDIENTE], así que no queremos darte una equivalencia que podría confundirte.
+El estudio usó una dosis alta. No nos dice qué pasa con cantidades menores, ni a cuántas tazas de café equivalen esos 400 mg. La cantidad de cafeína cambia mucho según la bebida y cómo se prepara, así que no queremos darte una equivalencia que podría confundirte.
 
 Tampoco nos da una hora exacta para el último café. Lo que sí podemos decir es que, según ese estudio, dejar 6 horas entre una dosis alta y la hora de dormir no bastó para evitar el efecto ([Drake y otros, 2013](https://pubmed.ncbi.nlm.nih.gov/24235903/)).
 
-Y cada persona reacciona distinto a la cafeína [FUENTE PENDIENTE]. Hay quien la siente mucho y hay quien casi no. Por eso la mejor guía suele ser tu propia experiencia, observada con paciencia.
+Y cada persona reacciona distinto a la cafeína. Hay quien la siente mucho y hay quien casi no. Por eso la mejor guía suele ser tu propia experiencia, observada con paciencia.
 
 ## Cómo calcular tu hora límite
 
@@ -60,11 +60,11 @@ No se trata de prohibirte nada. Se trata de tener una referencia y ajustarla seg
 
 ## La cafeína no está solo en el café
 
-La cafeína también aparece en el té, en muchos refrescos de cola, en las bebidas energéticas y en el chocolate [FUENTE PENDIENTE]. Si cuidas tu café de la tarde pero tomas otra bebida con cafeína en la cena, puede que el efecto sea parecido. Leer la etiqueta, cuando la hay, ayuda a saber qué estás tomando.
+La cafeína también aparece en el té, en muchos refrescos de cola, en las bebidas energéticas y en el chocolate. Si cuidas tu café de la tarde pero tomas otra bebida con cafeína en la cena, puede que el efecto sea parecido. Leer la etiqueta, cuando la hay, ayuda a saber qué estás tomando.
 
 ## Parte de un panorama más amplio
 
-Evitar la cafeína cerca de la hora de dormir es una de las recomendaciones clásicas de la llamada higiene del sueño. Una revisión de 2015 encontró que la evidencia de cada una de estas recomendaciones por separado es mixta, y que funcionan mejor como punto de partida que como solución única (Irish y otros, 2015 [ENLACE PENDIENTE]). Si te interesa el resto de la lista, la tienes en nuestro artículo sobre [hábitos para dormir mejor](/guia/habitos-para-dormir-mejor/).
+Evitar la cafeína cerca de la hora de dormir es una de las recomendaciones clásicas de la llamada higiene del sueño. Una revisión de 2015 encontró que la evidencia de cada una de estas recomendaciones por separado es mixta, y que funcionan mejor como punto de partida que como solución única (Irish y otros, 2015). Si te interesa el resto de la lista, la tienes en nuestro artículo sobre [hábitos para dormir mejor](/guia/habitos-para-dormir-mejor/).
 
 ## Una prueba amable
 
