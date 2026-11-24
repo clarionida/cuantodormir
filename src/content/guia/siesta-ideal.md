@@ -4,7 +4,7 @@ descripcion: "Una siesta corta, de unos 10 minutos, dio los beneficios más inme
 publicado: 2026-11-24
 actualizado: 2026-11-24
 autora: "Clariónida"
-revisado: false
+revisado: true
 orden: 4
 calculadora: "siesta"
 esencial:
@@ -68,9 +68,9 @@ El estudio no probó siestas de 90 minutos. La idea detrás de esta opción es o
 
 En el estudio de Brooks y Lack (2006), las siestas fueron por la tarde. Eso nos dice cuándo se probaron, pero no que la tarde sea la única buena hora, ni nos da una franja exacta.
 
-No contamos con una fuente que señale una hora ideal para la siesta, así que preferimos no inventarla [FUENTE PENDIENTE].
+No contamos con una fuente que señale una hora ideal para la siesta, así que preferimos no inventarla.
 
-Lo que sí podemos sugerirte, con prudencia, es no dejarla muy cerca de la hora de dormir, para que no le reste ganas de dormir a tu noche [FUENTE PENDIENTE].
+Lo que sí podemos sugerirte, con prudencia, es no dejarla muy cerca de la hora de dormir, para que no le reste ganas de dormir a tu noche.
 
 Más allá de eso, escucha a tu cuerpo. Hay días en que una siesta cae bien y días en que no hace falta.
 
