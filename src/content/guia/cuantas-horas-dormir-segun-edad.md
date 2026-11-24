@@ -54,9 +54,9 @@ No hace falta tomarlo con angustia. Una noche corta de vez en cuando le pasa a c
 
 No solo cambian las horas. También cambia la forma en que dormimos.
 
-En la infancia, la estructura del sueño es distinta y los ciclos son más cortos (Ohayon y otros, 2004 [ENLACE PENDIENTE]). Por eso niñas y niños no duermen como una versión pequeña de las personas adultas.
+En la infancia, la estructura del sueño es distinta y los ciclos son más cortos (Ohayon y otros, 2004). Por eso niñas y niños no duermen como una versión pequeña de las personas adultas.
 
-En la vida adulta, con los años, el mismo metaanálisis encontró varias tendencias (Ohayon y otros, 2004 [ENLACE PENDIENTE]):
+En la vida adulta, con los años, el mismo metaanálisis encontró varias tendencias (Ohayon y otros, 2004):
 
 - El tiempo total de sueño tiende a bajar.
 - El sueño profundo, también llamado de ondas lentas, ocupa una parte menor de la noche.
