@@ -1,18 +1,82 @@
 [
   {
-    "titulo": "[PENDIENTE: título del yoga nidra de unos 10 minutos]",
-    "youtubeId": "[PENDIENTE]",
+    "titulo": "10 min de Yoga Nidra",
+    "youtubeId": "v-pq2RQ7o1s",
     "duracionMin": 10,
     "tipo": "yoga-nidra",
-    "canal": "[PENDIENTE: nombre del canal]",
+    "canal": "Anabel Otero",
     "idioma": "es"
   },
   {
-    "titulo": "[PENDIENTE: título de una meditación para dormir de unos 15 minutos]",
-    "youtubeId": "[PENDIENTE]",
+    "titulo": "15 min de Yoga Nidra",
+    "youtubeId": "rTVeaQawNTQ",
+    "duracionMin": 20,
+    "tipo": "yoga-nidra",
+    "canal": "Anabel Otero",
+    "idioma": "es"
+  },
+  {
+    "titulo": "20 min de Yoga Nidra",
+    "youtubeId": "q6Ae0fiCS0I",
+    "duracionMin": 20,
+    "tipo": "yoga-nidra",
+    "canal": "Anabel Otero",
+    "idioma": "es"
+  },
+  {
+    "titulo": "10 min de Meditación Guiada",
+    "youtubeId": "uJ-OB-fC1m8",
+    "duracionMin": 10,
+    "tipo": "meditacion",
+    "canal": "Lojong",
+    "idioma": "es"
+  },
+  {
+    "titulo": "15 min de Meditación Guiada",
+    "youtubeId": "CkAOFDuxB38",
     "duracionMin": 15,
     "tipo": "meditacion",
-    "canal": "[PENDIENTE: nombre del canal]",
+    "canal": "Jorge Benito",
+    "idioma": "es"
+  },
+  {
+    "titulo": "20 min de Meditación Guiada",
+    "youtubeId": "2EuGo9Yz0Qg",
+    "duracionMin": 20,
+    "tipo": "meditacion",
+    "canal": "Lojong",
+    "idioma": "es"
+  },
+  {
+    "titulo": "10 min de Escaneo Corporal",
+    "youtubeId": "xJa8VI39WWw",
+    "duracionMin": 10,
+    "tipo": "escaneo-corporal",
+    "canal": "Pablo Gómez Psiquiatra",
+    "idioma": "es"
+  },
+  {
+    "titulo": "15 min de Escaneo Corporal",
+    "youtubeId": "3toPuPbDnuw",
+    "duracionMin": 15,
+    "tipo": "escaneo-corporal",
+    "canal": "Gabriela Litschi",
+    "idioma": "es"
+  },
+  {
+    "titulo": "2 horas de ranas",
+    "youtubeId": "AqjgkjZ8wRE",
+    "duracionMin": 120,
+    "tipo": "ambiente",
+    "canal": "Música relajante 24",
+    "idioma": "es"
+  },
+  {
+    "titulo": "24 horas de lluvia",
+    "youtubeId": "ZRC_vGzrauw",
+    "duracionMin": 450,
+    "tipo": "ambiente",
+    "canal": "Bih An Official y Aluvia",
     "idioma": "es"
   }
 ]
