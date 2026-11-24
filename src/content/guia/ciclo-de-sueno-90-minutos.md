@@ -54,7 +54,7 @@ La mediana es el valor del medio: la mitad de los ciclos duró menos y la otra m
 
 ## En la infancia, los ciclos son más cortos
 
-El sueño también cambia con la edad. En la infancia, la estructura del sueño es distinta y los ciclos son más cortos que en la vida adulta (Ohayon y otros, 2004 [ENLACE PENDIENTE]).
+El sueño también cambia con la edad. En la infancia, la estructura del sueño es distinta y los ciclos son más cortos que en la vida adulta (Ohayon y otros, 2004).
 
 Por eso esta calculadora está pensada para personas adultas. Si buscas orientación sobre el sueño de niñas y niños, lo mejor es platicarlo con su pediatra.
 
