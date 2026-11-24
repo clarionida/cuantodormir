@@ -4,7 +4,7 @@ descripcion: "No hay una hora única para el último café. Un estudio vio que u
 publicado: 2026-11-24
 actualizado: 2026-11-24
 autora: "Clariónida"
-revisado: false
+revisado: true
 orden: 8
 calculadora: "acostarse"
 esencial:
