@@ -748,6 +748,7 @@ main {
 }
 .etiquetas {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.4rem;
   margin-top: 0.6rem;
 }
@@ -762,6 +763,7 @@ main {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   font-weight: 600;
+  white-space: nowrap;
 }
 .etiqueta--rec {
   color: var(--acento);
@@ -818,9 +820,9 @@ main {
   font-size: 0.8125rem;
   color: var(--texto-suave);
 }
-.donacion-linea a,
 .boton-te {
-  display: inline-flex;
+  display: flex;
+  width: fit-content;
   align-items: center;
   gap: 0.4rem;
   min-height: 44px;
