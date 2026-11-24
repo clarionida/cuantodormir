@@ -4,7 +4,7 @@ descripcion: "La inercia del sueño es ese rato de mente nublada al despertar. E
 publicado: 2026-11-24
 actualizado: 2026-11-24
 autora: "Clariónida"
-revisado: false
+revisado: true
 orden: 5
 calculadora: "despertar"
 esencial:
